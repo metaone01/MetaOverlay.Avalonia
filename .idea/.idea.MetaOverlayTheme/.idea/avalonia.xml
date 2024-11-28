@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="demo/App.axaml" value="demo/demo.csproj" />
+        <entry key="demo/MainWindow.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/Border.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/Brushes.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/Button.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/ButtonSpinner.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/TabControl.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/TabItem.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/Window.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/Controls/_index.axaml" value="demo/demo.csproj" />
+        <entry key="src/MetaOverlayTheme/index.axaml" value="demo/demo.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,69 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:CompileBindings="True">
+    <ControlTheme x:Key="{x:Type Window}" TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource HardBackground}" />
+        <Setter Property="ExtendClientAreaChromeHints" Value="NoChrome" />
+        <Setter Property="ExtendClientAreaTitleBarHeightHint" Value="-1" />
+        <Setter Property="ExtendClientAreaToDecorationsHint" Value="True" />
+        <Setter Property="TransparencyLevelHint" Value="Blur" />
+        <Setter Property="ShowInTaskbar" Value="False" />
+        <Setter Property="Foreground" Value="{DynamicResource ActiveBrush}" />
+        <Setter Property="FontSize" Value="{DynamicResource DefaultFontSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource DefaultFontFamily}" />
+        <Setter Property="Template">
+            <ControlTemplate TargetType="Window">
+                <Border Name="PART_Background"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Margin="{TemplateBinding Padding}">
+                    <Panel>
+                        <VisualLayerManager>
+                            <VisualLayerManager.ChromeOverlayLayer>
+                                <TitleBar />
+                            </VisualLayerManager.ChromeOverlayLayer>
+                        </VisualLayerManager>
+                        <ContentPresenter Name="PART_ContentPresenter"
+                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Content="{TemplateBinding Content}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}" />
+                    </Panel>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+    <ControlTheme x:Key="OverlayWindow" BasedOn="Window" TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource OverlayAlphaBrush}" />
+        <Setter Property="ExtendClientAreaChromeHints" Value="NoChrome" />
+        <Setter Property="ExtendClientAreaTitleBarHeightHint" Value="-1" />
+        <Setter Property="ExtendClientAreaToDecorationsHint" Value="True" />
+        <Setter Property="TransparencyLevelHint" Value="Blur" />
+        <Setter Property="ShowInTaskbar" Value="False" />
+        <Setter Property="Foreground" Value="{DynamicResource ActiveBrush}" />
+        <Setter Property="FontSize" Value="{DynamicResource DefaultFontSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource DefaultFontFamily}" />
+        <Setter Property="Template">
+            <ControlTemplate TargetType="Window">
+                <Border Name="PART_Background"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Margin="{TemplateBinding Padding}">
+                    <Panel>
+                        <ContentPresenter Name="PART_ContentPresenter"
+                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          Content="{TemplateBinding Content}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}" />
+                    </Panel>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+</ResourceDictionary>

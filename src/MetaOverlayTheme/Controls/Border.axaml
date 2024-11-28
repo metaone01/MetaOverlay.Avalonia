@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:CompileBindings="True">
+    <ControlTheme x:Key="{x:Type Border}" TargetType="Border">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ActiveAlphaBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Background" Value="{DynamicResource DefaultBackgroundBrush}" />
+        <Setter Property="CornerRadius" Value="0" />
+    </ControlTheme>
+
+    <ControlTheme x:Key="Overlay" BasedOn="{StaticResource {x:Type Border}}" TargetType="Border">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Background" Value="{DynamicResource OverlayAlphaBrush}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="CornerRadius" Value="0" />
+    </ControlTheme>
+</ResourceDictionary>
