@@ -2,7 +2,14 @@
 <project version="4">
   <component name="UserContentModel">
     <attachedFolders />
-    <explicitIncludes />
+    <explicitIncludes>
+      <Path>.gitignore</Path>
+      <Path>LICENSE</Path>
+      <Path>MetaOverlayTheme.sln.DotSettings.user</Path>
+      <Path>README.md</Path>
+      <Path>README_CN.md</Path>
+      <Path>src</Path>
+    </explicitIncludes>
     <explicitExcludes />
   </component>
 </project>

@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Default -->
+    <SolidColorBrush x:Key="BorderDefaultBorderBrush" Color="#800080FF" />
+    <SolidColorBrush x:Key="BorderDefaultBackground" Color="Transparent" />
+
+    <!-- Overlay -->
+    <SolidColorBrush x:Key="BorderOverlayBackground" Color="#80000000" />
+</ResourceDictionary>

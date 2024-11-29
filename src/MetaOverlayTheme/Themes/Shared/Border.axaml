@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Default -->
+    <CornerRadius x:Key="BorderDefaultCornerRadius">0</CornerRadius>
+    <Thickness x:Key="BorderDefaultBorderThickness">1</Thickness>
+    <Thickness x:Key="BorderDefaultMargin">4</Thickness>
+    <Thickness x:Key="BorderDefaultPadding">20</Thickness>
+    
+    <!-- Overlay -->
+    <CornerRadius x:Key="BorderOverlayCornerRadius">0</CornerRadius>
+    <Thickness x:Key="BorderOverlayBorderThickness">0</Thickness>
+    <Thickness x:Key="BorderOverlayMargin">0</Thickness>
+    <Thickness x:Key="BorderOverlayPadding">0</Thickness>
+</ResourceDictionary>

@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Thickness x:Key="TabItemLeftMargin">0</Thickness>
+    <Thickness x:Key="TabItemLeftPadding">4 8</Thickness>
+    <Thickness x:Key="TabItemTopMargin">0</Thickness>
+    <Thickness x:Key="TabItemTopPadding">8 4</Thickness>
+    <Thickness x:Key="TabItemRightMargin">0</Thickness>
+    <Thickness x:Key="TabItemRightPadding">4 8</Thickness>
+    <Thickness x:Key="TabItemBottomMargin">0</Thickness>
+    <Thickness x:Key="TabItemBottomPadding">8 4</Thickness>
+    <Thickness x:Key="TabItemLeftBorderThickness">1 1 0 1</Thickness>
+    <Thickness x:Key="TabItemTopBorderThickness">1 1 1 0</Thickness>
+    <Thickness x:Key="TabItemRightBorderThickness">0 1 1 1</Thickness>
+    <Thickness x:Key="TabItemBottomBorderThickness">1 0 1 1</Thickness>
+</ResourceDictionary>

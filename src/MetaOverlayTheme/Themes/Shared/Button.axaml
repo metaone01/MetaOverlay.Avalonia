@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <CornerRadius x:Key="ButtonDefaultCornerRadius">3</CornerRadius>
+    <Thickness x:Key="ButtonDefaultMargin">6 0</Thickness>
+    <Thickness x:Key="ButtonDefaultPadding">12 6</Thickness>
+    <Thickness x:Key="ButtonDefaultBorderThickness">1</Thickness>
+    <x:Double x:Key="ButtonDefaultFontSize">14</x:Double>
+    <FontWeight x:Key="ButtonDefaultFontWeight">600</FontWeight>
+    <CornerRadius x:Key="ButtonSolidCornerRadius">3</CornerRadius>
+    <Thickness x:Key="ButtonSolidMargin">6 0</Thickness>
+    <Thickness x:Key="ButtonSolidPadding">12 6</Thickness>
+    <Thickness x:Key="ButtonSolidBorderThickness">1</Thickness>
+    <x:Double x:Key="ButtonSolidFontSize">14</x:Double>
+    <FontWeight x:Key="ButtonSolidFontWeight">600</FontWeight>
+    <CornerRadius x:Key="ButtonBorderlessCornerRadius">3</CornerRadius>
+    <Thickness x:Key="ButtonBorderlessMargin">6 0</Thickness>
+    <Thickness x:Key="ButtonBorderlessPadding">12 6</Thickness>
+    <Thickness x:Key="ButtonBorderlessBorderThickness">1</Thickness>
+    <x:Double x:Key="ButtonBorderlessFontSize">14</x:Double>
+    <FontWeight x:Key="ButtonBorderlessFontWeight">600</FontWeight>
+</ResourceDictionary>

@@ -1,0 +1,89 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Default -->
+    <SolidColorBrush x:Key="ButtonDefaultForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="ButtonDefaultBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="ButtonDefaultBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ButtonDefaultPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonDefaultPointerOverBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="ButtonDefaultPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonDefaultPressedBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="ButtonDisabledForeground" Color="DarkGray" />
+    <SolidColorBrush x:Key="ButtonDisabledBorderBrush" Color="DimGray" />
+    <SolidColorBrush x:Key="ButtonDisabledBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ButtonSuccessForeground" Color="#80FF80" />
+    <SolidColorBrush x:Key="ButtonSuccessBorderBrush" Color="#80FF80" />
+    <SolidColorBrush x:Key="ButtonSuccessPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonSuccessPointerOverBackground" Color="#8080FF80" />
+    <SolidColorBrush x:Key="ButtonSuccessPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonSuccessPressedBackground" Color="#8080FF80" />
+    <SolidColorBrush x:Key="ButtonWarningForeground" Color="#FFFF80" />
+    <SolidColorBrush x:Key="ButtonWarningBorderBrush" Color="#FFFF80" />
+    <SolidColorBrush x:Key="ButtonWarningPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonWarningPointerOverBackground" Color="#80FFFF80" />
+    <SolidColorBrush x:Key="ButtonWarningPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonWarningPressedBackground" Color="#80FFFF80" />
+    <SolidColorBrush x:Key="ButtonDangerForeground" Color="#FF8080" />
+    <SolidColorBrush x:Key="ButtonDangerBorderBrush" Color="#FF8080" />
+    <SolidColorBrush x:Key="ButtonDangerPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonDangerPointerOverBackground" Color="#80FF8080" />
+    <SolidColorBrush x:Key="ButtonDangerPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonDangerPressedBackground" Color="#80FF8080" />
+    <!-- Solid -->
+    <SolidColorBrush x:Key="ButtonSolidForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ButtonSolidBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="ButtonSolidBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="ButtonSolidPointerOverForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidPointerOverBackground" Color="#8000FFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidPressedForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidPressedBackground" Color="#8000FFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidSuccessForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidSuccessBorderBrush" Color="#80FF80" />
+    <SolidColorBrush x:Key="ButtonSolidSuccessBackground" Color="#8080FF80" />
+    <SolidColorBrush x:Key="ButtonSolidSuccessPointerOverForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidSuccessPointerOverBackground" Color="#8000FF00" />
+    <SolidColorBrush x:Key="ButtonSolidSuccessPressedForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidSuccessPressedBackground" Color="#8000FF00" />
+    <SolidColorBrush x:Key="ButtonSolidWarningForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidWarningBorderBrush" Color="#FFFF80" />
+    <SolidColorBrush x:Key="ButtonSolidWarningBackground" Color="#80FFFF80" />
+    <SolidColorBrush x:Key="ButtonSolidWarningPointerOverForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidWarningPointerOverBackground" Color="#80FFFF00" />
+    <SolidColorBrush x:Key="ButtonSolidWarningPressedForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidWarningPressedBackground" Color="#80FFFF00" />
+    <SolidColorBrush x:Key="ButtonSolidDangerForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidDangerBorderBrush" Color="#FF8080" />
+    <SolidColorBrush x:Key="ButtonSolidDangerBackground" Color="#80FF8080" />
+    <SolidColorBrush x:Key="ButtonSolidDangerPointerOverForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidDangerPointerOverBackground" Color="#80FF0000" />
+    <SolidColorBrush x:Key="ButtonSolidDangerPressedForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="ButtonSolidDangerPressedBackground" Color="#80FF0000" />
+    <SolidColorBrush x:Key="ButtonSolidDisabledForeground" Color="#A9A9A9" />
+    <SolidColorBrush x:Key="ButtonSolidDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="ButtonSolidDisabledBackground" Color="#80696969" />
+    <!-- Borderless -->
+    <SolidColorBrush x:Key="ButtonBorderlessForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="ButtonBorderlessBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="ButtonBorderlessBorderBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="ButtonBorderlessPointerOverForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ButtonBorderlessPointerOverBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="ButtonBorderlessPressedForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="ButtonBorderlessPressedBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="ButtonBorderlessSuccessForeground" Color="#80FF80" />
+    <SolidColorBrush x:Key="ButtonBorderlessSuccessPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonBorderlessSuccessPointerOverBackground" Color="#8080FF80" />
+    <SolidColorBrush x:Key="ButtonBorderlessSuccessPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonBorderlessSuccessPressedBackground" Color="#8080FF80" />
+    <SolidColorBrush x:Key="ButtonBorderlessWarningForeground" Color="#FFFF80" />
+    <SolidColorBrush x:Key="ButtonBorderlessWarningPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonBorderlessWarningPointerOverBackground" Color="#80FFFF80" />
+    <SolidColorBrush x:Key="ButtonBorderlessWarningPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonBorderlessWarningPressedBackground" Color="#80FFFF80" />
+    <SolidColorBrush x:Key="ButtonBorderlessDangerForeground" Color="#FF8080" />
+    <SolidColorBrush x:Key="ButtonBorderlessDangerPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonBorderlessDangerPointerOverBackground" Color="#80FF8080" />
+    <SolidColorBrush x:Key="ButtonBorderlessDangerPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="ButtonBorderlessDangerPressedBackground" Color="#80FF8080" />
+    <SolidColorBrush x:Key="ButtonBorderlessDisabledForeground" Color="DarkGray" />
+    <SolidColorBrush x:Key="ButtonBorderlessDisabledBackground" Color="Transparent" />
+</ResourceDictionary>

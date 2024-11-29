@@ -1,12 +1,10 @@
 ﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Brushes_Light.axaml" />
-        <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Brushes_Dark.axaml" />
-        <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Brushes_SuperLight.axaml" />
-        <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Brushes_SuperDark.axaml" />
         <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Border.axaml" />
         <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Button.axaml" />
+        <ResourceInclude Source="avares://MetaOverlayTheme/Controls/ButtonSpinner.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlayTheme/Controls/PathIcon.axaml"/>
         <ResourceInclude Source="avares://MetaOverlayTheme/Controls/TabControl.axaml" />
         <ResourceInclude Source="avares://MetaOverlayTheme/Controls/TabItem.axaml" />
         <ResourceInclude Source="avares://MetaOverlayTheme/Controls/Window.axaml" />

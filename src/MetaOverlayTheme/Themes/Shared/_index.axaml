@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/Border.axaml" />
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/Button.axaml" />
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/ButtonSpinner.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/PathIcon.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/TabControl.axaml" />
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/TabItem.axaml" />
+        <ResourceInclude Source="avares://MetaOverlayTheme/Themes/Shared/Window.axaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

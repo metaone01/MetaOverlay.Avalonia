@@ -1,21 +1,26 @@
 ﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:CompileBindings="True">
+    
+    <!--  Border Theme Key: Default, Overlay  -->
+    
+    <!-- Default -->
     <ControlTheme x:Key="{x:Type Border}" TargetType="Border">
-        <Setter Property="Margin" Value="0" />
-        <Setter Property="Padding" Value="0" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ActiveAlphaBrush}" />
-        <Setter Property="BorderThickness" Value="2" />
-        <Setter Property="Background" Value="{DynamicResource DefaultBackgroundBrush}" />
-        <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="Margin" Value="{DynamicResource BorderDefaultMargin}" />
+        <Setter Property="Padding" Value="{DynamicResource BorderDefaultPadding}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderDefaultBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource BorderDefaultBorderThickness}" />
+        <Setter Property="Background" Value="{DynamicResource BorderDefaultBackground}" />
+        <Setter Property="CornerRadius" Value="{DynamicResource BorderDefaultCornerRadius}" />
     </ControlTheme>
 
+    <!-- Overlay -->
     <ControlTheme x:Key="Overlay" BasedOn="{StaticResource {x:Type Border}}" TargetType="Border">
-        <Setter Property="Margin" Value="0" />
-        <Setter Property="Padding" Value="0" />
-        <Setter Property="Background" Value="{DynamicResource OverlayAlphaBrush}" />
-        <Setter Property="BorderBrush" Value="Transparent" />
-        <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="Margin" Value="{DynamicResource BorderOverlayMargin}" />
+        <Setter Property="Padding" Value="{DynamicResource BorderOverlayPadding}" />
+        <Setter Property="Background" Value="{DynamicResource BorderOverlayBackground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderOverlayBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource BorderOverlayBorderThickness}" />
+        <Setter Property="CornerRadius" Value="{DynamicResource BorderOverlayCornerRadius}" />
     </ControlTheme>
 </ResourceDictionary>
