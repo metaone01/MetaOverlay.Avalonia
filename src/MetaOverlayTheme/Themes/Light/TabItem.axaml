@@ -1,50 +1,50 @@
 ﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <LinearGradientBrush x:Key="TabItemDefaultTopBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
+    <LinearGradientBrush x:Key="TabItemLeftBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="#0080FF" Offset="0" />
         <GradientStop Color="Transparent" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultBottomPointerOverBackground" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="Transparent" Offset="0" />
-        <GradientStop Color="#0080FF" Offset="1" />
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultLeftPointerOverBackground" StartPoint="0% 50%" EndPoint="100% 50%">
+    <LinearGradientBrush x:Key="TabItemTopBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
         <GradientStop Color="#0080FF" Offset="0" />
         <GradientStop Color="Transparent" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultRightPointerOverBackground" StartPoint="0% 50%" EndPoint="100% 50%">
+    <LinearGradientBrush x:Key="TabItemRightBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="Transparent" Offset="0" />
         <GradientStop Color="#0080FF" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultTopPointerOverBackground" StartPoint="50% 0%" EndPoint="50% 100%">
+    <LinearGradientBrush x:Key="TabItemBottomBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
+        <GradientStop Color="Transparent" Offset="0" />
+        <GradientStop Color="#0080FF" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TabItemLeftPointerOverBackground" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="#0080FF" Offset="0" />
         <GradientStop Color="Transparent" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultBottomBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="Transparent" Offset="0" />
-        <GradientStop Color="#0080FF" Offset="1" />
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultLeftBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
+    <LinearGradientBrush x:Key="TabItemTopPointerOverBackground" StartPoint="50% 0%" EndPoint="50% 100%">
         <GradientStop Color="#0080FF" Offset="0" />
         <GradientStop Color="Transparent" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDefaultRightBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
+    <LinearGradientBrush x:Key="TabItemRightPointerOverBackground" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="Transparent" Offset="0" />
         <GradientStop Color="#0080FF" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDisabledTopBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
+    <LinearGradientBrush x:Key="TabItemBottomPointerOverBackground" StartPoint="50% 0%" EndPoint="50% 100%">
+        <GradientStop Color="Transparent" Offset="0" />
+        <GradientStop Color="#0080FF" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TabItemLeftDisabledBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="DimGray" Offset="0" />
         <GradientStop Color="Transparent" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDisabledBottomBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
+    <LinearGradientBrush x:Key="TabItemTopDisabledBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
+        <GradientStop Color="DimGray" Offset="0" />
+        <GradientStop Color="Transparent" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TabItemRightDisabledBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="Transparent" Offset="0" />
         <GradientStop Color="DimGray" Offset="1" />
     </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDisabledLeftBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
-        <GradientStop Color="DimGray" Offset="0" />
-        <GradientStop Color="Transparent" Offset="1" />
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="TabItemDisabledRightBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
+    <LinearGradientBrush x:Key="TabItemBottomDisabledBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
         <GradientStop Color="Transparent" Offset="0" />
         <GradientStop Color="DimGray" Offset="1" />
     </LinearGradientBrush>

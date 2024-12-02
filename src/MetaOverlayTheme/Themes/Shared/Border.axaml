@@ -7,8 +7,8 @@
     <Thickness x:Key="BorderDefaultPadding">20</Thickness>
     
     <!-- Overlay -->
-    <CornerRadius x:Key="BorderOverlayCornerRadius">0</CornerRadius>
-    <Thickness x:Key="BorderOverlayBorderThickness">0</Thickness>
-    <Thickness x:Key="BorderOverlayMargin">0</Thickness>
-    <Thickness x:Key="BorderOverlayPadding">0</Thickness>
+    <CornerRadius x:Key="OverlayBorderDefaultCornerRadius">0</CornerRadius>
+    <Thickness x:Key="OverlayBorderDefaultBorderThickness">0</Thickness>
+    <Thickness x:Key="OverlayBorderDefaultMargin">0</Thickness>
+    <Thickness x:Key="OverlayBorderDefaultPadding">0</Thickness>
 </ResourceDictionary>

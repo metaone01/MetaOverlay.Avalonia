@@ -15,12 +15,12 @@
     </ControlTheme>
 
     <!-- Overlay -->
-    <ControlTheme x:Key="Overlay" BasedOn="{StaticResource {x:Type Border}}" TargetType="Border">
-        <Setter Property="Margin" Value="{DynamicResource BorderOverlayMargin}" />
-        <Setter Property="Padding" Value="{DynamicResource BorderOverlayPadding}" />
-        <Setter Property="Background" Value="{DynamicResource BorderOverlayBackground}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderOverlayBorderBrush}" />
-        <Setter Property="BorderThickness" Value="{DynamicResource BorderOverlayBorderThickness}" />
-        <Setter Property="CornerRadius" Value="{DynamicResource BorderOverlayCornerRadius}" />
+    <ControlTheme x:Key="OverlayBorder" BasedOn="{StaticResource {x:Type Border}}" TargetType="Border">
+        <Setter Property="Margin" Value="{DynamicResource OverlayBorderDefaultMargin}" />
+        <Setter Property="Padding" Value="{DynamicResource OverlayBorderDefaultPadding}" />
+        <Setter Property="Background" Value="{DynamicResource OverlayBorderDefaultBackground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource OverlayBorderDefaultBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource OverlayBorderDefaultBorderThickness}" />
+        <Setter Property="CornerRadius" Value="{DynamicResource OverlayBorderDefaultCornerRadius}" />
     </ControlTheme>
 </ResourceDictionary>

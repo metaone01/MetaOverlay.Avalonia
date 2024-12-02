@@ -1,0 +1,10 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Thickness x:Key="AutoCompleteBoxPopupDefaultMargin">4</Thickness>
+    <Thickness x:Key="AutoCompleteBoxPopupDefaultBorderThickness">1</Thickness>
+    <CornerRadius x:Key="AutoCompleteBoxDefaultCornerRadius">5</CornerRadius>
+    <CornerRadius x:Key="AutoCompleteBoxPopupDefaultCornerRadius">5</CornerRadius>
+    <x:Double x:Key="AutoCompleteBoxDefaultMaxDropdownHeight">600</x:Double>
+    <x:Double x:Key="AutoCompleteBoxLargeHeight">40</x:Double>
+    <x:Double x:Key="AutoCompleteBoxSmallHeight">24</x:Double>
+</ResourceDictionary>

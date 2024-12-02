@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <x:Double x:Key="TextBlockDefaultFontSize">14</x:Double>
+    <FontWeight x:Key="TextBlockDefaultFontWeight">400</FontWeight>
+    <x:Double x:Key="TextBlockCodeFontSize">12</x:Double>
+    <CornerRadius x:Key="TextBlockCodeCornerRadius">2</CornerRadius>
+    <x:Double x:Key="TitleTextBlockH1FontSize">32</x:Double>
+    <x:Double x:Key="TitleTextBlockH2FontSize">28</x:Double>
+    <x:Double x:Key="TitleTextBlockH3FontSize">24</x:Double>
+    <x:Double x:Key="TitleTextBlockH4FontSize">20</x:Double>
+    <x:Double x:Key="TitleTextBlockH5FontSize">18</x:Double>
+    <x:Double x:Key="TitleTextBlockH6FontSize">16</x:Double>
+    <FontWeight x:Key="TitleTextBlockDefaultFontWeight">600</FontWeight>
+</ResourceDictionary>

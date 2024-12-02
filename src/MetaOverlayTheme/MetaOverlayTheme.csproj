@@ -4,7 +4,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>0.0.1</Version>
+        <Version>0.1.1</Version>
         <Title>MetaOverlayTheme</Title>
         <Authors>MetaOne</Authors>
     </PropertyGroup>
@@ -12,5 +12,4 @@
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="11.2.2" />
     </ItemGroup>
-
 </Project>

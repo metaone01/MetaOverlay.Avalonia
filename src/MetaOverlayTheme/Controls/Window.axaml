@@ -2,10 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:CompileBindings="True">
     
-    <!--  Window Theme Key:       Default, WithTitleBar  -->
+    <!--  Theme Keys:       Default, TitleBar  -->
     
     <!-- Default -->
-    <ControlTheme x:Key="{x:Type Window}" BasedOn="{StaticResource {x:Type Window}}" TargetType="Window">
+    <ControlTheme x:Key="{x:Type Window}" TargetType="Window">
         <Setter Property="Background" Value="{DynamicResource WindowDefaultBackground}" />
         <Setter Property="ExtendClientAreaChromeHints" Value="NoChrome" />
         <Setter Property="ExtendClientAreaTitleBarHeightHint" Value="-1" />
@@ -18,6 +18,7 @@
         <Setter Property="Template">
             <ControlTemplate TargetType="Window">
                 <Border Name="PART_Background"
+                        Theme="OverlayBorder"
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
@@ -36,15 +37,15 @@
         </Setter>
     </ControlTheme>
     
-    <!-- WithTitleBar -->
-    <ControlTheme x:Key="WithTitleBar" BasedOn="{StaticResource {x:Type Window}}" TargetType="Window">
-        <Setter Property="Background" Value="{DynamicResource WindowWithTitleBarBackground}" />
+    <!-- TitleBar -->
+    <ControlTheme x:Key="TitleBarWindow" BasedOn="{StaticResource {x:Type Window}}" TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource TitleBarWindowDefaultBackground}" />
         <Setter Property="ExtendClientAreaChromeHints" Value="Default" />
         <Setter Property="ExtendClientAreaToDecorationsHint" Value="False" />
         <Setter Property="TransparencyLevelHint" Value="None" />
         <Setter Property="ShowInTaskbar" Value="True" />
-        <Setter Property="Foreground" Value="{DynamicResource WindowWithTitleBarForeground}" />
-        <Setter Property="FontSize" Value="{DynamicResource WindowWithTitleBarFontSize}" />
+        <Setter Property="Foreground" Value="{DynamicResource TitleBarWindowDefaultForeground}" />
+        <Setter Property="FontSize" Value="{DynamicResource TitleBarWindowDefaultFontSize}" />
         <Setter Property="Template">
             <ControlTemplate TargetType="Window">
                 <Border Name="PART_Background"

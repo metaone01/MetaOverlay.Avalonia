@@ -1,0 +1,306 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:CompileBindings="True">
+    <!-- Hint: This control is using TextBlock resources -->
+
+    <!--  Theme Keys:         Default, Alpha, Solid, AlphaSolid, Borderless -->
+    <!--  Classes:            Default, Success, Warning, Danger  -->
+    <!--  Alpha Orientations: Left, Top, Right, Bottom  -->
+    <!--  States:             default, disabled  -->
+
+
+    <ControlTheme x:Key="{x:Type Label}" TargetType="Label">
+        <Setter Property="Foreground" Value="{DynamicResource TextBlockDefaultForeground}" />
+        <Setter Property="FontSize" Value="{DynamicResource TextBlockDefaultFontSize}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource LabelDefaultBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource LabelDefaultBorderThickness}" />
+        <Setter Property="Background" Value="{DynamicResource TextBlockDefaultBackground}" />
+        <Setter Property="Template">
+            <ControlTemplate TargetType="Label">
+                <ContentPresenter
+                    Name="PART_ContentPresenter"
+                    Padding="{TemplateBinding Padding}"
+                    HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                    VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Content="{TemplateBinding Content}"
+                    ContentTemplate="{TemplateBinding ContentTemplate}"
+                    CornerRadius="{TemplateBinding CornerRadius}"
+                    FontSize="{TemplateBinding FontSize}"
+                    RecognizesAccessKey="True" />
+            </ControlTemplate>
+        </Setter>
+        <Style Selector="^.Success">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockSuccessForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource LabelSuccessBorderBrush}" />
+        </Style>
+        <Style Selector="^.Warning">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockWarningForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource LabelWarningBorderBrush}" />
+        </Style>
+        <Style Selector="^.Danger">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockDangerForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource LabelDangerBorderBrush}" />
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockDefaultDisabledForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource LabelDefaultDisabledBorderBrush}" />
+        </Style>
+    </ControlTheme>
+    <ControlTheme x:Key="AlphaLabel"
+                  BasedOn="{StaticResource {x:Type Label}}"
+                  TargetType="Label">
+        <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopDefaultBorderBrush}" />
+        <Style Selector="^:disabled">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopDefaultDisabledBorderBrush}" />
+        </Style>
+        <Style Selector="^.Left">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelLeftDefaultBorderBrush}" />
+            <Style Selector="^:disabled">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelLeftDefaultDisabledBorderBrush}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Top" />
+        <Style Selector="^.Right">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelRightDefaultBorderBrush}" />
+            <Style Selector="^:disabled">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelRightDefaultDisabledBorderBrush}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Bottom">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelBottomDefaultBorderBrush}" />
+            <Style Selector="^:disabled">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelBottomDefaultDisabledBorderBrush}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Success">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopSuccessBorderBrush}" />
+            <Style Selector="^:disabled">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopDefaultDisabledBorderBrush}" />
+            </Style>
+            <Style Selector="^.Left">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelLeftSuccessBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelLeftDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Top" />
+            <Style Selector="^.Right">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelRightSuccessBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelRightDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Bottom">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelBottomSuccessBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelBottomDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^.Warning">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopWarningBorderBrush}" />
+            <Style Selector="^:disabled">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopDefaultDisabledBorderBrush}" />
+            </Style>
+            <Style Selector="^.Left">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelLeftWarningBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelLeftDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Top" />
+            <Style Selector="^.Right">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelRightWarningBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelRightDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Bottom">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelBottomWarningBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelBottomDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^.Danger">
+            <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelTopDangerBorderBrush}" />
+            <Style Selector="^:disabled">
+                <Setter Property="BorderBrush"
+                        Value="{DynamicResource AlphaLabelTopDefaultDisabledBorderBrush}" />
+            </Style>
+            <Style Selector="^.Left">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelLeftDangerBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelLeftDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Top" />
+            <Style Selector="^.Right">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelRightDangerBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelRightDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Bottom">
+                <Setter Property="BorderBrush" Value="{DynamicResource AlphaLabelBottomDangerBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="BorderBrush"
+                            Value="{DynamicResource AlphaLabelBottomDefaultDisabledBorderBrush}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockDefaultDisabledForeground}" />
+        </Style>
+    </ControlTheme>
+    <ControlTheme x:Key="SolidLabel"
+                  BasedOn="{StaticResource {x:Type Label}}"
+                  TargetType="Label">
+        <Setter Property="Background" Value="{DynamicResource SolidTextBlockDefaultBackground}" />
+        <Style Selector="^.Success">
+            <Setter Property="Foreground" Value="{DynamicResource SolidTextBlockSuccessForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidTextBlockSuccessBackground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource LabelSuccessBorderBrush}" />
+        </Style>
+        <Style Selector="^.Warning">
+            <Setter Property="Foreground" Value="{DynamicResource SolidTextBlockWarningForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidTextBlockWarningBackground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource LabelWarningBorderBrush}" />
+        </Style>
+        <Style Selector="^.Danger">
+            <Setter Property="Foreground" Value="{DynamicResource SolidTextBlockDangerForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidTextBlockDangerBackground}" />
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="{DynamicResource SolidTextBlockDefaultDisabledForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidTextBlockDefaultDisabledBackground}" />
+        </Style>
+    </ControlTheme>
+    <ControlTheme x:Key="AlphaSolidLabel"
+                  BasedOn="{StaticResource AlphaLabel}"
+                  TargetType="Label">
+        <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopDefaultBackground}" />
+        <Style Selector="^:disabled">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopDefaultDisabledBackground}" />
+        </Style>
+        <Style Selector="^.Left">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelLeftDefaultBackground}" />
+            <Style Selector="^:disabled">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelLeftDefaultDisabledBackground}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Top" />
+        <Style Selector="^.Right">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelRightDefaultBackground}" />
+            <Style Selector="^:disabled">
+                <Setter Property="Background"
+                        Value="{DynamicResource AlphaSolidLabelRightDefaultDisabledBackground}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Bottom">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelBottomDefaultBackground}" />
+            <Style Selector="^:disabled">
+                <Setter Property="Background"
+                        Value="{DynamicResource AlphaSolidLabelBottomDefaultDisabledBackground}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Success">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopSuccessBackground}" />
+            <Style Selector="^:disabled">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopDefaultDisabledBackground}" />
+            </Style>
+            <Style Selector="^.Left">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelLeftSuccessBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelLeftDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Top" />
+            <Style Selector="^.Right">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelRightSuccessBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelRightDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Bottom">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelBottomSuccessBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelBottomDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^.Warning">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopWarningBackground}" />
+            <Style Selector="^:disabled">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopDefaultDisabledBackground}" />
+            </Style>
+            <Style Selector="^.Left">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelLeftWarningBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelLeftDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Top" />
+            <Style Selector="^.Right">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelRightWarningBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelRightDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Bottom">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelBottomWarningBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelBottomDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^.Danger">
+            <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelTopDangerBackground}" />
+            <Style Selector="^:disabled">
+                <Setter Property="Background"
+                        Value="{DynamicResource AlphaSolidLabelTopDefaultDisabledBackground}" />
+            </Style>
+            <Style Selector="^.Left">
+                <Setter Property="Background" Value="{DynamicResource AlphaSolidLabelLeftDangerBackground}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelLeftDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Top" />
+            <Style Selector="^.Right">
+                <Setter Property="Background" Value="{DynamicResource AlphaLabelRightDangerBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelRightDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Bottom">
+                <Setter Property="Background" Value="{DynamicResource AlphaLabelBottomDangerBorderBrush}" />
+                <Style Selector="^:disabled">
+                    <Setter Property="Background"
+                            Value="{DynamicResource AlphaSolidLabelBottomDefaultDisabledBackground}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockDefaultDisabledForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidTextBlockDefaultDisabledBackground}" />
+        </Style>
+    </ControlTheme>
+</ResourceDictionary>

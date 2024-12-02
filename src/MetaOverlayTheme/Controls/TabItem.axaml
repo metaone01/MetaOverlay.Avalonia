@@ -37,19 +37,19 @@
                 <Setter Property="Margin" Value="{DynamicResource TabItemLeftMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemLeftPadding}" />
                 <Setter Property="BorderThickness" Value="{DynamicResource TabItemLeftBorderThickness}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultLeftBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftBorderBrush}" />
             </Style>
             <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultLeftPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
             </Style>
             <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultLeftPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
             </Style>
             <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultLeftPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
             </Style>
             <Style Selector="^:disabled /template/ Border">
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDisabledLeftBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftDisabledBorderBrush}" />
             </Style>
         </Style>
         <Style Selector="^[TabStripPlacement=Top]">
@@ -57,19 +57,19 @@
                 <Setter Property="Margin" Value="{DynamicResource TabItemTopMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemTopPadding}" />
                 <Setter Property="BorderThickness" Value="{DynamicResource TabItemTopBorderThickness}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultTopBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopBorderBrush}" />
             </Style>
             <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultTopPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
             </Style>
             <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultTopPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
             </Style>
             <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultTopPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
             </Style>
             <Style Selector="^:disabled /template/ Border">
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDisabledTopBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopDisabledBorderBrush}" />
             </Style>
         </Style>
         <Style Selector="^[TabStripPlacement=Right]">
@@ -77,19 +77,19 @@
                 <Setter Property="Margin" Value="{DynamicResource TabItemRightMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemRightPadding}" />
                 <Setter Property="BorderThickness" Value="{DynamicResource TabItemRightBorderThickness}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultRightBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightBorderBrush}" />
             </Style>
             <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultRightPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
             </Style>
             <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultRightPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
             </Style>
             <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultRightPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
             </Style>
             <Style Selector="^:disabled /template/ Border">
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDisabledRightBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightDisabledBorderBrush}" />
             </Style>
         </Style>
         <Style Selector="^[TabStripPlacement=Bottom]">
@@ -97,19 +97,19 @@
                 <Setter Property="Margin" Value="{DynamicResource TabItemBottomMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemBottomPadding}" />
                 <Setter Property="BorderThickness" Value="{DynamicResource TabItemBottomBorderThickness}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultBottomBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomBorderBrush}" />
             </Style>
             <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultBottomPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
             </Style>
             <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultBottomPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
             </Style>
             <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemDefaultBottomPointerOverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
             </Style>
             <Style Selector="^:disabled /template/ Border">
-                <Setter Property="BorderBrush" Value="{DynamicResource TabItemDisabledBottomBorderBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomDisabledBorderBrush}" />
             </Style>
         </Style>
         <Style Selector="^:pointerover">

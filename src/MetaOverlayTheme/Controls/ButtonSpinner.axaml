@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:CompileBindings="True">
 
-    <!-- ButtonSpinner Theme Keys: Default, Solid, Borderless -->
+    <!-- Theme Keys: Default, Solid, Borderless -->
 
     
     <!-- ButtonSpinnerRepeatButton -->
@@ -52,37 +52,33 @@
     <ControlTheme x:Key="SolidButtonSpinnerRepeatButton"
                   BasedOn="{StaticResource ButtonSpinnerRepeatButton}"
                   TargetType="RepeatButton">
-        <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerRepeatButtonSolidForeground}" />
-        <Setter Property="Background" Value="{DynamicResource ButtonSpinnerRepeatButtonSolidBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultForeground}" />
+        <Setter Property="Background" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultBackground}" />
         <Style Selector="^:pointerover /template/ ContentPresenter">
             <Setter Property="Background"
-                    Value="{DynamicResource ButtonSpinnerRepeatButtonSolidPointerOverBackground}" />
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPointerOverBackground}" />
             <Setter Property="Foreground"
-                    Value="{DynamicResource ButtonSpinnerRepeatButtonSolidPointerOverForeground}" />
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPointerOverForeground}" />
         </Style>
         <Style Selector="^:pressed /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource ButtonSpinnerRepeatButtonSolidPressedBackground}" />
-            <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerRepeatButtonSolidPressedForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPressedBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPressedForeground}" />
         </Style>
         <Style Selector="^:disabled /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource ButtonSpinnerRepeatButtonSolidDisabledBackground}" />
-            <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerRepeatButtonSolidDisabledForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledForeground}" />
             <Setter Property="BorderBrush"
-                    Value="{DynamicResource ButtonSpinnerRepeatButtonSolidDisabledBorderBrush}" />
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
     
     <!-- Borderless -->
     <ControlTheme x:Key="BorderlessButtonSpinnerRepeatButton" TargetType="RepeatButton">
-        <Setter Property="BorderThickness" Value="{DynamicResource ButtonSpinnerRepeatButtonBorderlessBorderThickness}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ButtonSpinnerRepeatButtonBorderlessBorderBrush}" />
-        <Style Selector="^:pressed /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource ButtonSpinnerRepeatButtonDefaultPressedBackground}" />
-            <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerRepeatButtonDefaultPressedForeground}" />
-        </Style>
+        <Setter Property="BorderThickness" Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultBorderThickness}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultBorderBrush}" />
         <Style Selector="^:disabled /template/ ContentPresenter">
             <Setter Property="BorderBrush"
-                    Value="{DynamicResource ButtonSpinnerRepeatButtonBorderlessDisabledBorderBrush}" />
+                    Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
     
@@ -123,7 +119,7 @@
                                           Theme="{StaticResource ButtonSpinnerRepeatButton}">
                                 <PathIcon Theme="{DynamicResource InnerPathIcon}"
                                           Classes="ExtraSmall"
-                                          Data="{DynamicResource ButtonSpinnerIncreaseButtonGlyph}"
+                                          Data="{DynamicResource ButtonSpinnerIncreaseButtonDefaultGlyph}"
                                           Foreground="{DynamicResource ButtonSpinnerIncreaseButtonDefaultForeground}" />
                             </RepeatButton>
                             <RepeatButton Name="PART_DecreaseButton"
@@ -131,7 +127,7 @@
                                           Theme="{StaticResource ButtonSpinnerRepeatButton}">
                                 <PathIcon Theme="{DynamicResource InnerPathIcon}"
                                           Classes="ExtraSmall"
-                                          Data="{DynamicResource ButtonSpinnerDecreaseButtonGlyph}"
+                                          Data="{DynamicResource ButtonSpinnerDecreaseButtonDefaultGlyph}"
                                           Foreground="{DynamicResource ButtonSpinnerDecreaseButtonDefaultForeground}" />
                             </RepeatButton>
                         </Grid>
@@ -152,9 +148,9 @@
     <!-- Solid -->
     <ControlTheme x:Key="SolidButtonSpinner" BasedOn="{StaticResource {x:Type ButtonSpinner}}"
                   TargetType="ButtonSpinner">
-        <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerSolidForeground}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ButtonSpinnerSolidBorderBrush}" />
-        <Setter Property="BorderThickness" Value="{DynamicResource ButtonSpinnerSolidBorderThickness}" />
+        <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerDefaultForeground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SolidButtonSpinnerDefaultBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource SolidButtonSpinnerDefaultBorderThickness}" />
         <Setter Property="Template">
             <ControlTemplate TargetType="ButtonSpinner">
                 <Grid ColumnDefinitions="Auto,*,Auto">
@@ -172,10 +168,10 @@
                     <Border Name="ButtonGroup"
                             Grid.Column="2"
                             MinWidth="16"
-                            Margin="{DynamicResource ButtonSpinnerButtonGroupSolidMargin}"
-                            BorderBrush="{DynamicResource ButtonSpinnerButtonGroupSolidBorderBrush}"
-                            BorderThickness="{DynamicResource ButtonSpinnerButtonGroupSolidBorderThickness}"
-                            CornerRadius="{DynamicResource ButtonSpinnerButtonGroupSolidCornerRadius}"
+                            Margin="{DynamicResource SolidButtonSpinnerButtonGroupDefaultMargin}"
+                            BorderBrush="{DynamicResource SolidButtonSpinnerButtonGroupDefaultBorderBrush}"
+                            BorderThickness="{DynamicResource SolidButtonSpinnerButtonGroupDefaultBorderThickness}"
+                            CornerRadius="{DynamicResource SolidButtonSpinnerButtonGroupDefaultCornerRadius}"
                             IsVisible="{TemplateBinding ShowButtonSpinner}"
                             UseLayoutRounding="False">
                         <Grid RowDefinitions="*,*">
@@ -184,7 +180,7 @@
                                           Theme="{StaticResource SolidButtonSpinnerRepeatButton}">
                                 <PathIcon Theme="{DynamicResource InnerPathIcon}"
                                           Classes="ExtraSmall"
-                                          Data="{DynamicResource ButtonSpinnerIncreaseButtonGlyph}"
+                                          Data="{DynamicResource ButtonSpinnerIncreaseButtonDefaultGlyph}"
                                           Foreground="{DynamicResource ButtonSpinnerIncreaseButtonDefaultForeground}" />
                             </RepeatButton>
                             <RepeatButton Name="PART_DecreaseButton"
@@ -192,7 +188,7 @@
                                           Theme="{StaticResource SolidButtonSpinnerRepeatButton}">
                                 <PathIcon Theme="{DynamicResource InnerPathIcon}"
                                           Classes="ExtraSmall"
-                                          Data="{DynamicResource ButtonSpinnerDecreaseButtonGlyph}"
+                                          Data="{DynamicResource ButtonSpinnerDecreaseButtonDefaultGlyph}"
                                           Foreground="{DynamicResource ButtonSpinnerDecreaseButtonDefaultForeground}" />
                             </RepeatButton>
                         </Grid>
@@ -204,18 +200,18 @@
             <Setter Property="Grid.Column" Value="0" />
         </Style>
         <Style Selector="^:disabled">
-            <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerSolidDisabledForeground}" />
-            <Setter Property="Background" Value="{DynamicResource ButtonSpinnerSolidDisabledBackground}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource ButtonSpinnerSolidDisabledBorderBrush}" />
+            <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerDefaultDisabledForeground}" />
+            <Setter Property="Background" Value="{DynamicResource SolidButtonSpinnerDefaultDisabledBackground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource SolidButtonSpinnerDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
     
     <!-- Borderless -->
     <ControlTheme x:Key="BorderlessButtonSpinner" BasedOn="{StaticResource {x:Type ButtonSpinner}}"
                   TargetType="ButtonSpinner">
-        <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerBorderlessForeground}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource ButtonSpinnerBorderlessBorderBrush}" />
-        <Setter Property="BorderThickness" Value="{DynamicResource ButtonSpinnerBorderlessBorderThickness}" />
+        <Setter Property="Foreground" Value="{DynamicResource BorderlessButtonSpinnerDefaultForeground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BorderlessButtonSpinnerDefaultBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource BorderlessButtonSpinnerDefaultBorderThickness}" />
         <Setter Property="Template">
             <ControlTemplate TargetType="ButtonSpinner">
                 <Grid ColumnDefinitions="Auto,*,Auto">
@@ -233,10 +229,10 @@
                     <Border Name="ButtonGroup"
                             Grid.Column="2"
                             MinWidth="16"
-                            Margin="{DynamicResource ButtonSpinnerButtonGroupBorderlessMargin}"
-                            BorderBrush="{DynamicResource ButtonSpinnerButtonGroupBorderlessBorderBrush}"
-                            BorderThickness="{DynamicResource ButtonSpinnerButtonGroupBorderlessBorderThickness}"
-                            CornerRadius="{DynamicResource ButtonSpinnerButtonGroupBorderlessCornerRadius}"
+                            Margin="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultMargin}"
+                            BorderBrush="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultBorderBrush}"
+                            BorderThickness="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultBorderThickness}"
+                            CornerRadius="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultCornerRadius}"
                             IsVisible="{TemplateBinding ShowButtonSpinner}"
                             UseLayoutRounding="False">
                         <Grid RowDefinitions="*,*">
@@ -245,7 +241,7 @@
                                           Theme="{StaticResource ButtonSpinnerRepeatButton}">
                                 <PathIcon Theme="{DynamicResource InnerPathIcon}"
                                           Classes="ExtraSmall"
-                                          Data="{DynamicResource ButtonSpinnerIncreaseButtonGlyph}"
+                                          Data="{DynamicResource ButtonSpinnerIncreaseButtonDefaultGlyph}"
                                           Foreground="{DynamicResource ButtonSpinnerIncreaseButtonDefaultForeground}" />
                             </RepeatButton>
                             <RepeatButton Name="PART_DecreaseButton"
@@ -253,7 +249,7 @@
                                           Theme="{StaticResource ButtonSpinnerRepeatButton}">
                                 <PathIcon Theme="{DynamicResource InnerPathIcon}"
                                           Classes="ExtraSmall"
-                                          Data="{DynamicResource ButtonSpinnerDecreaseButtonGlyph}"
+                                          Data="{DynamicResource ButtonSpinnerDecreaseButtonDefaultGlyph}"
                                           Foreground="{DynamicResource ButtonSpinnerDecreaseButtonDefaultForeground}" />
                             </RepeatButton>
                         </Grid>
@@ -265,8 +261,8 @@
             <Setter Property="Grid.Column" Value="0" />
         </Style>
         <Style Selector="^:disabled">
-            <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerBorderlessDisabledForeground}" />
-            <Setter Property="Background" Value="{DynamicResource ButtonSpinnerBorderlessDisabledBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource BorderlessButtonSpinnerDefaultDisabledForeground}" />
+            <Setter Property="Background" Value="{DynamicResource BorderlessButtonSpinnerDefaultDisabledBackground}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>
