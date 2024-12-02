@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/AdornerLayer.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/AutoCompleteBox.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Border.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Button.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/ButtonSpinner.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Label.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/PathIcon.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/TabItem.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/TextBlock.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Window.axaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

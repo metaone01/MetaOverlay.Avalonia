@@ -1,0 +1,16 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Styles.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceInclude x:Key="Default" Source="avares://MetaOverlay.Avalonia/Themes/Light/_index.axaml"/>
+                <ResourceInclude x:Key="Light" Source="avares://MetaOverlay.Avalonia/Themes/Light/_index.axaml"/>
+                <!-- <ResourceInclude x:Key="Dark" Source="avares://MetaOverlayTheme/Themes/Dark/_index.axaml"/> TODO -->
+            </ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/_index.axaml"/>
+                <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Shared/_index.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Styles.Resources>
+</Styles>
