@@ -1,11 +1,15 @@
 ﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:CompileBindings="True">
-    
     <ControlTheme x:Key="{x:Type TabControl}" TargetType="TabControl">
         <Setter Property="Margin" Value="{DynamicResource TabControlDefaultMargin}" />
         <Setter Property="Padding" Value="{DynamicResource TabControlDefaultPadding}" />
         <Setter Property="BorderThickness" Value="{DynamicResource TabControlDefaultBorderThickness}" />
+        <Setter Property="ItemsPanel">
+            <ItemsPanelTemplate>
+                <VirtualizingStackPanel Orientation="Horizontal" />
+            </ItemsPanelTemplate>
+        </Setter>
         <Setter Property="Template">
             <ControlTemplate TargetType="TabControl">
                 <Border HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
@@ -14,14 +18,45 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
                         CornerRadius="{TemplateBinding CornerRadius}">
-                    <ContentPresenter Name="PART_ContentPresenter"
-                                      Margin="{TemplateBinding Padding}"
-                                      HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                      VerticalContentAlignment="{TemplateBinding VerticalAlignment}"
-                                      Content="{TemplateBinding SelectedContent}"
-                                      ContentTemplate="{TemplateBinding SelectedContentTemplate}" />
+                    <DockPanel>
+                        <ScrollViewer Theme="{StaticResource SimpleMenuScrollViewer}" DockPanel.Dock="{TemplateBinding TabStripPlacement}" Name="PART_ScrollViewer">
+                            <ItemsPresenter Name="PART_ItemsPresenter" ItemsPanel="{TemplateBinding ItemsPanel}"
+                                            Margin="0 0 12 12" />
+                        </ScrollViewer>
+                        <ContentPresenter Name="PART_SelectedContentHost"
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalContentAlignment="{TemplateBinding VerticalAlignment}"
+                                          Content="{TemplateBinding SelectedContent}"
+                                          ContentTemplate="{TemplateBinding SelectedContentTemplate}" />
+                    </DockPanel>
                 </Border>
             </ControlTemplate>
         </Setter>
+        <Style Selector="^[TabStripPlacement=Left], ^[TabStripPlacement=Right]">
+            <Style Selector="^ /template/ ItemsPresenter">
+                <Setter Property="ItemsPanel">
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel Orientation="Vertical" />
+                    </ItemsPanelTemplate>
+                </Setter>
+            </Style>
+        </Style>
+        <Style Selector="^[TabStripPlacement=Left] /template/ ScrollViewer#PART_ScrollViewer">
+            <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Visible" />
+        </Style>
+        <Style Selector="^[TabStripPlacement=Right] /template/ ScrollViewer#PART_ScrollViewer">
+            <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Visible" />
+        </Style>
+        <Style Selector="^[TabStripPlacement=Top] /template/ ScrollViewer#PART_ScrollViewer">
+            <Setter Property="HorizontalScrollBarVisibility" Value="Visible" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled" />
+        </Style>
+        <Style Selector="^[TabStripPlacement=Bottom] /template/ ScrollViewer#PART_ScrollViewer">
+            <Setter Property="HorizontalScrollBarVisibility" Value="Visible" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled" />
+        </Style>
     </ControlTheme>
 </ResourceDictionary>

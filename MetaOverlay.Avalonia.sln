@@ -2,18 +2,24 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Avalonia", "src\MetaOverlay.Avalonia\MetaOverlay.Avalonia.csproj", "{EBC02EFC-C631-4396-AAAC-79ED45FC7D40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo\demo\demo.csproj", "{67E72765-70FB-496C-A7DA-BAD6013FB2F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Avalonia.Demo", "demo\MetaOverlay.Avalonia.Demo\MetaOverlay.Avalonia.Demo.csproj", "{67E72765-70FB-496C-A7DA-BAD6013FB2F3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EBC02EFC-C631-4396-AAAC-79ED45FC7D40} = {EBC02EFC-C631-4396-AAAC-79ED45FC7D40}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo.Android", "demo\demo.Android\demo.Android.csproj", "{02037608-70DC-41C9-B514-CCD4AE86F8DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Avalonia.Demo.Android", "demo\MetaOverlay.Avalonia.Demo.Android\MetaOverlay.Avalonia.Demo.Android.csproj", "{02037608-70DC-41C9-B514-CCD4AE86F8DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo.Desktop", "demo\demo.Desktop\demo.Desktop.csproj", "{D292B176-A08A-4585-B409-7BC632589132}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Avalonia.Demo.Desktop", "demo\MetaOverlay.Avalonia.Demo.Desktop\MetaOverlay.Avalonia.Demo.Desktop.csproj", "{D292B176-A08A-4585-B409-7BC632589132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo.iOS", "demo\demo.iOS\demo.iOS.csproj", "{5A01CE04-41A5-4A8A-8C49-A75DD7D31AB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Avalonia.Demo.iOS", "demo\MetaOverlay.Avalonia.Demo.iOS\MetaOverlay.Avalonia.Demo.iOS.csproj", "{5A01CE04-41A5-4A8A-8C49-A75DD7D31AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo.Browser", "demo\demo.Browser\demo.Browser.csproj", "{C9143E50-94A8-4DD8-BA88-37EA45FE6530}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Avalonia.Demo.Browser", "demo\MetaOverlay.Avalonia.Demo.Browser\MetaOverlay.Avalonia.Demo.Browser.csproj", "{C9143E50-94A8-4DD8-BA88-37EA45FE6530}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{3AD74179-0828-4650-8D19-36FFCC2566DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Lite.Avalonia", "MetaOverlay.Lite.Avalonia\MetaOverlay.Lite.Avalonia.csproj", "{25221D35-FF12-47BA-AF7E-230E678122AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaOverlay.Heavy.Avalonia", "MetaOverlay.Heavy.Avalonia\MetaOverlay.Heavy.Avalonia.csproj", "{6CAE661C-62E9-4BE2-8EAC-E14F1C05D08C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,5 +55,20 @@ Global
 		{C9143E50-94A8-4DD8-BA88-37EA45FE6530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9143E50-94A8-4DD8-BA88-37EA45FE6530}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9143E50-94A8-4DD8-BA88-37EA45FE6530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25221D35-FF12-47BA-AF7E-230E678122AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25221D35-FF12-47BA-AF7E-230E678122AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25221D35-FF12-47BA-AF7E-230E678122AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25221D35-FF12-47BA-AF7E-230E678122AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAE661C-62E9-4BE2-8EAC-E14F1C05D08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAE661C-62E9-4BE2-8EAC-E14F1C05D08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAE661C-62E9-4BE2-8EAC-E14F1C05D08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAE661C-62E9-4BE2-8EAC-E14F1C05D08C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67E72765-70FB-496C-A7DA-BAD6013FB2F3} = {3AD74179-0828-4650-8D19-36FFCC2566DD}
+		{02037608-70DC-41C9-B514-CCD4AE86F8DA} = {3AD74179-0828-4650-8D19-36FFCC2566DD}
+		{C9143E50-94A8-4DD8-BA88-37EA45FE6530} = {3AD74179-0828-4650-8D19-36FFCC2566DD}
+		{D292B176-A08A-4585-B409-7BC632589132} = {3AD74179-0828-4650-8D19-36FFCC2566DD}
+		{5A01CE04-41A5-4A8A-8C49-A75DD7D31AB1} = {3AD74179-0828-4650-8D19-36FFCC2566DD}
 	EndGlobalSection
 EndGlobal

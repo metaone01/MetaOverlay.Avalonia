@@ -5,8 +5,6 @@
     <!-- Status: default, disabled -->
 
     <ControlTheme x:Key="{x:Type TextBlock}" TargetType="TextBlock">
-        <Setter Property="Foreground" Value="{DynamicResource TextBlockDefaultForeground}" />
-        <Setter Property="Background" Value="{DynamicResource TextBlockDefaultBackground}"/>
         <Style Selector="^.Success">
             <Setter Property="Foreground" Value="{DynamicResource TextBlockSuccessForeground}" />
         </Style>

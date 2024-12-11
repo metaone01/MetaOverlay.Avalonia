@@ -6,8 +6,10 @@
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Border.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Button.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/ButtonSpinner.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Calendar.axaml"/>
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Label.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/PathIcon.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/ScrollViewer.axaml"/>
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/TabItem.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/TextBlock.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Themes/Light/Window.axaml" />

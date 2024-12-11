@@ -2,8 +2,17 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:CompileBindings="True">
-    <ControlTheme x:Key="{x:Type TabItem}" TargetType="TabItem">
+
+    <!-- Theme Keys: Default, Alpha, NoChange -->
+    <!-- Classes:    Default, Success, Warning, Danger -->
+    <!-- Status:     default, pointerover, pressed, selected, disabled -->
+
+    <!-- NoChange -->
+    <ControlTheme x:Key="NoChangeTabItem" TargetType="TabItem">
         <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultForeground}" />
+        <Setter Property="Background" Value="{DynamicResource TabItemDefaultBackground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource TabItemDefaultBorderThickness}" />
         <Setter Property="Template">
             <ControlTemplate TargetType="TabItem">
                 <Border
@@ -21,100 +30,408 @@
                         ContentTemplate="{TemplateBinding HeaderTemplate}"
                         FontFamily="{TemplateBinding FontFamily}"
                         FontWeight="{TemplateBinding FontWeight}"
-                        Foreground="{TemplateBinding Foreground}"
-                        TextElement.Foreground="{TemplateBinding Foreground}"/>
+                        Foreground="{TemplateBinding Foreground}" />
                 </Border>
             </ControlTemplate>
         </Setter>
         <Style Selector="^:not(:selected)">
             <Setter Property="Cursor" Value="Hand" />
         </Style>
-        <Style Selector="^:disabled /template/ ContentPresenter">
-            <Setter Property="TextElement.Foreground" Value="{DynamicResource TabItemDisabledForeground}" />
+        <Style Selector="^.Success">
+            <Setter Property="Foreground" Value="{DynamicResource TabItemSuccessForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource TabItemSuccessBorderBrush}" />
         </Style>
+        <Style Selector="^.Warning">
+            <Setter Property="Foreground" Value="{DynamicResource TabItemWarningForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource TabItemWarningBorderBrush}" />
+        </Style>
+        <Style Selector="^.Danger">
+            <Setter Property="Foreground" Value="{DynamicResource TabItemDangerForeground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource TabItemDangerBorderBrush}" />
+        </Style>
+    </ControlTheme>
+
+    <!-- AlphaNoChange -->
+    <ControlTheme x:Key="AlphaNoChangeTabItem"
+                  BasedOn="{StaticResource NoChangeTabItem}"
+                  TargetType="TabItem">
         <Style Selector="^[TabStripPlacement=Left]">
             <Style Selector="^ /template/ Border">
                 <Setter Property="Margin" Value="{DynamicResource TabItemLeftMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemLeftPadding}" />
-                <Setter Property="BorderThickness" Value="{DynamicResource TabItemLeftBorderThickness}"/>
+                <Setter Property="BorderThickness" Value="{DynamicResource TabItemLeftBorderThickness}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftBorderBrush}" />
             </Style>
-            <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
+            <Style Selector="^.Success /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftSuccessBorderBrush}" />
             </Style>
-            <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
+            <Style Selector="^.Warning /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftWarningBorderBrush}" />
             </Style>
-            <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
+            <Style Selector="^.Danger /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftDangerBorderBrush}" />
             </Style>
-            <Style Selector="^:disabled /template/ Border">
+            <Style Selector="^:disabled">
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemLeftDisabledBorderBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultDisabledForeground}" />
             </Style>
         </Style>
         <Style Selector="^[TabStripPlacement=Top]">
             <Style Selector="^ /template/ Border">
                 <Setter Property="Margin" Value="{DynamicResource TabItemTopMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemTopPadding}" />
-                <Setter Property="BorderThickness" Value="{DynamicResource TabItemTopBorderThickness}"/>
+                <Setter Property="BorderThickness" Value="{DynamicResource TabItemTopBorderThickness}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopBorderBrush}" />
             </Style>
-            <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
+            <Style Selector="^.Success /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopSuccessBorderBrush}" />
             </Style>
-            <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
+            <Style Selector="^.Warning /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopWarningBorderBrush}" />
             </Style>
-            <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
+            <Style Selector="^.Danger /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopDangerBorderBrush}" />
             </Style>
-            <Style Selector="^:disabled /template/ Border">
+            <Style Selector="^:disabled">
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemTopDisabledBorderBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultDisabledForeground}" />
             </Style>
         </Style>
         <Style Selector="^[TabStripPlacement=Right]">
             <Style Selector="^ /template/ Border">
                 <Setter Property="Margin" Value="{DynamicResource TabItemRightMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemRightPadding}" />
-                <Setter Property="BorderThickness" Value="{DynamicResource TabItemRightBorderThickness}"/>
+                <Setter Property="BorderThickness" Value="{DynamicResource TabItemRightBorderThickness}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightBorderBrush}" />
             </Style>
-            <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
+            <Style Selector="^.Success /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightSuccessBorderBrush}" />
             </Style>
-            <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
+            <Style Selector="^.Warning /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightWarningBorderBrush}" />
             </Style>
-            <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
+            <Style Selector="^.Danger /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightDangerBorderBrush}" />
             </Style>
-            <Style Selector="^:disabled /template/ Border">
+            <Style Selector="^:disabled">
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemRightDisabledBorderBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultDisabledForeground}" />
             </Style>
         </Style>
         <Style Selector="^[TabStripPlacement=Bottom]">
             <Style Selector="^ /template/ Border">
                 <Setter Property="Margin" Value="{DynamicResource TabItemBottomMargin}" />
                 <Setter Property="Padding" Value="{DynamicResource TabItemBottomPadding}" />
-                <Setter Property="BorderThickness" Value="{DynamicResource TabItemBottomBorderThickness}"/>
+                <Setter Property="BorderThickness" Value="{DynamicResource TabItemBottomBorderThickness}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomBorderBrush}" />
             </Style>
-            <Style Selector="^:pointerover /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
+            <Style Selector="^.Success /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomSuccessBorderBrush}" />
             </Style>
-            <Style Selector="^:pressed /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
+            <Style Selector="^.Warning /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomWarningBorderBrush}" />
             </Style>
-            <Style Selector="^:selected /template/ Border">
-                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
+            <Style Selector="^.Danger /template/ Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomDangerBorderBrush}" />
             </Style>
-            <Style Selector="^:disabled /template/ Border">
+            <Style Selector="^:disabled">
                 <Setter Property="BorderBrush" Value="{DynamicResource TabItemBottomDisabledBorderBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultDisabledForeground}" />
             </Style>
         </Style>
+    </ControlTheme>
+
+    <!-- Default -->
+    <ControlTheme x:Key="{x:Type TabItem}"
+                  BasedOn="{StaticResource NoChangeTabItem}"
+                  TargetType="TabItem">
         <Style Selector="^:pointerover">
-            <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}"/>
-            <Setter Property="TextElement.Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}"/>
+            <Setter Property="Background" Value="{DynamicResource TabItemDefaultPointerOverBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+        </Style>
+        <Style Selector="^:pressed">
+            <Setter Property="Background" Value="{DynamicResource TabItemDefaultPointerOverBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+        </Style>
+        <Style Selector="^:selected">
+            <Setter Property="Background" Value="{DynamicResource TabItemDefaultPointerOverBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+        </Style>
+        <Style Selector="^.Success">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemSuccessPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemSuccessPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemSuccessPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Warning">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemWarningPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemWarningPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemWarningPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+        </Style>
+        <Style Selector="^.Danger">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemDangerPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemDangerPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemDangerPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultDisabledBorderBrush}" />
+            <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultDisabledForeground}" />
+        </Style>
+    </ControlTheme>
+
+    <!-- Alpha -->
+    <ControlTheme x:Key="AlphaTabItem"
+                  BasedOn="{StaticResource AlphaNoChangeTabItem}"
+                  TargetType="TabItem">
+        <Style Selector="^[TabStripPlacement=Left]">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemLeftPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^.Success">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Warning">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Danger">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemLeftDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^[TabStripPlacement=Top]">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemTopPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^.Success">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Warning">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Danger">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemTopDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^[TabStripPlacement=Right]">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemRightPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^.Success">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Warning">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Danger">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemRightDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+        </Style>
+        <Style Selector="^[TabStripPlacement=Bottom]">
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^:selected">
+                <Setter Property="Background" Value="{DynamicResource TabItemBottomPointerOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+            </Style>
+            <Style Selector="^.Success">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomSuccessPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Warning">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomWarningPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
+            <Style Selector="^.Danger">
+                <Style Selector="^:pointerover">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:pressed">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+                <Style Selector="^:selected">
+                    <Setter Property="Background" Value="{DynamicResource TabItemBottomDangerPointerOverBackground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultPointerOverForeground}" />
+                </Style>
+            </Style>
         </Style>
     </ControlTheme>
 

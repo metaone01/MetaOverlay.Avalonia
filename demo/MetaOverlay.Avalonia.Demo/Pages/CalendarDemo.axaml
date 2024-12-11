@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="MetaOverlay.Avalonia.Demo.Pages.CalendarDemo">
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <DockPanel Grid.Row="0" Grid.Column="0">
+            <Label DockPanel.Dock="Top" Theme="{StaticResource AlphaLabel}" Classes="Top" Content="No Selection" />
+            <Calendar SelectionMode="None" />
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="1">
+            <Label DockPanel.Dock="Top" Theme="{StaticResource AlphaLabel}" Classes="Top" Content="Single Date" />
+            <Calendar />
+        </DockPanel>
+        <DockPanel Grid.Row="1" Grid.Column="0">
+            <Label DockPanel.Dock="Top" Theme="{StaticResource AlphaLabel}" Classes="Top" Content="Single Range" />
+            <Calendar SelectionMode="SingleRange" />
+        </DockPanel>
+        <DockPanel Grid.Row="1" Grid.Column="1">
+            <Label DockPanel.Dock="Top" Theme="{StaticResource AlphaLabel}" Classes="Top" Content="Multiple Range" />
+            <Calendar SelectionMode="MultipleRange" />
+        </DockPanel>
+    </Grid>
+</UserControl>
