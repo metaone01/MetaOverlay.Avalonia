@@ -297,7 +297,7 @@
                     <RepeatButton
                         Background="Transparent"
                         BorderThickness="0"
-                        Width="40"
+                        Width="20"
                         VerticalAlignment="Stretch"
                         Command="{Binding LineLeft, RelativeSource={RelativeSource TemplatedParent}}"
                         DockPanel.Dock="Left">
@@ -311,14 +311,14 @@
                                 <Binding Path="Viewport.Width" RelativeSource="{RelativeSource TemplatedParent}" />
                             </MultiBinding>
                         </RepeatButton.IsVisible>
-                        <Path Data="M16 4 8 12 16 20M12 2 2 12 12 22"
-                              StrokeThickness="{DynamicResource MenuScrollBarButtonArrowDefaultThickness}"
-                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                        <Path Data="M14 2 14 0 0 10 14 20 14 18 4 10ZM6 10 20 18 20 16 10 10 20 4 20 2ZM20 6 14 10 20 14Z"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top" />
                     </RepeatButton>
                     <RepeatButton
                         Background="Transparent"
                         BorderThickness="0"
-                        Height="40"
+                        Height="20"
                         HorizontalAlignment="Stretch"
                         Command="{Binding LineUp, RelativeSource={RelativeSource TemplatedParent}}"
                         DockPanel.Dock="Top">
@@ -332,12 +332,15 @@
                                 <Binding Path="Viewport.Height" RelativeSource="{RelativeSource TemplatedParent}" />
                             </MultiBinding>
                         </RepeatButton.IsVisible>
-                        
+                        <Path
+                            Data="M18 14 20 14 10 0 0 14 2 14 10 4ZM10 6 2 20 4 20 10 10 16 20 18 20ZM14 20 10 14 6 20Z"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top" />
                     </RepeatButton>
                     <RepeatButton
                         Background="Transparent"
                         BorderThickness="0"
-                        Width="40"
+                        Width="20"
                         VerticalAlignment="Stretch"
                         Command="{Binding LineRight, RelativeSource={RelativeSource TemplatedParent}}"
                         DockPanel.Dock="Right">
@@ -351,14 +354,14 @@
                                 <Binding Path="Viewport.Width" RelativeSource="{RelativeSource TemplatedParent}" />
                             </MultiBinding>
                         </RepeatButton.IsVisible>
-                        <Path Data="M2 20 10 12 2 4M6 22 16 12 6 2"
-                              StrokeThickness="{DynamicResource MenuScrollBarButtonArrowDefaultThickness}"
-                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                        <Path Data="M6 18 6 20 20 10 6 0 6 2 16 10ZM14 10 0 2 0 4 10 10 0 16 0 18ZM0 14 6 10 0 6Z"
+                              HorizontalAlignment="Right"
+                              VerticalAlignment="Top" />
                     </RepeatButton>
                     <RepeatButton
                         Background="Transparent"
                         BorderThickness="0"
-                        Height="40"
+                        Height="20"
                         HorizontalAlignment="Stretch"
                         Command="{Binding LineDown, RelativeSource={RelativeSource TemplatedParent}}"
                         DockPanel.Dock="Bottom">
@@ -372,9 +375,10 @@
                                 <Binding Path="Viewport.Height" RelativeSource="{RelativeSource TemplatedParent}" />
                             </MultiBinding>
                         </RepeatButton.IsVisible>
-                        <Path Data="M4 2 12 10 20 2M2 6 12 16 22 6"
-                              StrokeThickness="{DynamicResource MenuScrollBarButtonArrowDefaultThickness}"
-                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                        <Path
+                            Data="M2 6 0 6 10 20 20 6 18 6 10 16ZM10 14 18 0 16 0 10 10 4 0 2 0ZM6 0 10 6 14 0Z"
+                            HorizontalAlignment="Left" 
+                            VerticalAlignment="Bottom" />
                     </RepeatButton>
                     <ScrollContentPresenter Name="PART_ContentPresenter" Margin="{TemplateBinding Padding}" />
                 </DockPanel>

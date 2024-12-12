@@ -44,18 +44,18 @@
         </Style>
         <Style Selector="^[TabStripPlacement=Left] /template/ ScrollViewer#PART_ScrollViewer">
             <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />
-            <Setter Property="VerticalScrollBarVisibility" Value="Visible" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
         </Style>
         <Style Selector="^[TabStripPlacement=Right] /template/ ScrollViewer#PART_ScrollViewer">
             <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />
-            <Setter Property="VerticalScrollBarVisibility" Value="Visible" />
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
         </Style>
         <Style Selector="^[TabStripPlacement=Top] /template/ ScrollViewer#PART_ScrollViewer">
-            <Setter Property="HorizontalScrollBarVisibility" Value="Visible" />
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
             <Setter Property="VerticalScrollBarVisibility" Value="Disabled" />
         </Style>
         <Style Selector="^[TabStripPlacement=Bottom] /template/ ScrollViewer#PART_ScrollViewer">
-            <Setter Property="HorizontalScrollBarVisibility" Value="Visible" />
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
             <Setter Property="VerticalScrollBarVisibility" Value="Disabled" />
         </Style>
     </ControlTheme>
