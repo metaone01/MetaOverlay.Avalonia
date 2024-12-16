@@ -1,11 +1,11 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- Default -->
-    <SolidColorBrush x:Key="LabelDefaultBorderBrush" Color="#0080FF"/>
-    <SolidColorBrush x:Key="LabelDefaultDisabledBorderBrush" Color="#696969"/>
-    <SolidColorBrush x:Key="LabelSuccessBorderBrush" Color="#80FF80"/>
-    <SolidColorBrush x:Key="LabelWarningBorderBrush" Color="#FFFF80"/>
-    <SolidColorBrush x:Key="LabelDangerBorderBrush" Color="#FF8080"/>
+    <SolidColorBrush x:Key="LabelDefaultBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="LabelDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="LabelSuccessBorderBrush" Color="#80FF80" />
+    <SolidColorBrush x:Key="LabelWarningBorderBrush" Color="#FFFF80" />
+    <SolidColorBrush x:Key="LabelDangerBorderBrush" Color="#FF8080" />
     <!-- Alpha -->
     <LinearGradientBrush x:Key="AlphaLabelLeftDefaultBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="#0080FF" Offset="0" />
@@ -88,11 +88,11 @@
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <!-- Solid -->
-    <SolidColorBrush x:Key="SolidLabelDefaultBorderBrush" Color="#0080FF"/>
-    <SolidColorBrush x:Key="SolidLabelDefaultDisabledBorderBrush" Color="#696969"/>
-    <SolidColorBrush x:Key="SolidLabelSuccessBorderBrush" Color="#80FF80"/>
-    <SolidColorBrush x:Key="SolidLabelWarningBorderBrush" Color="#FFFF80"/>
-    <SolidColorBrush x:Key="SolidLabelDangerBorderBrush" Color="#FF8080"/>
+    <SolidColorBrush x:Key="SolidLabelDefaultBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="SolidLabelDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="SolidLabelSuccessBorderBrush" Color="#80FF80" />
+    <SolidColorBrush x:Key="SolidLabelWarningBorderBrush" Color="#FFFF80" />
+    <SolidColorBrush x:Key="SolidLabelDangerBorderBrush" Color="#FF8080" />
     <LinearGradientBrush x:Key="SolidLabelLeftBackground" StartPoint="0% 50%" EndPoint="100% 50%">
         <GradientStop Color="#0080FF" Offset="0" />
         <GradientStop Color="Transparent" Offset="1" />

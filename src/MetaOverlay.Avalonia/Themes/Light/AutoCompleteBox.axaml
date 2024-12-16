@@ -1,8 +1,8 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <SolidColorBrush x:Key="AutoCompleteBoxDefaultForeground" />
-    <SolidColorBrush x:Key="AutoCompleteBoxDefaultBackground" Color="Transparent"/>
-    <SolidColorBrush x:Key="AutoCompleteBoxPopupDefaultForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="AutoCompleteBoxDefaultBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="AutoCompleteBoxPopupDefaultForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="AutoCompleteBoxPopupDefaultBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="AutoCompleteBoxPopupDefaultBorderBrush" Color="#0080FF" />
 </ResourceDictionary>

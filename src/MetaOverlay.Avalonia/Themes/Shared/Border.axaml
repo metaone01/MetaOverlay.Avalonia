@@ -5,7 +5,7 @@
     <Thickness x:Key="BorderDefaultBorderThickness">1</Thickness>
     <Thickness x:Key="BorderDefaultMargin">4</Thickness>
     <Thickness x:Key="BorderDefaultPadding">20</Thickness>
-    
+
     <!-- Overlay -->
     <CornerRadius x:Key="OverlayBorderDefaultCornerRadius">0</CornerRadius>
     <Thickness x:Key="OverlayBorderDefaultBorderThickness">0</Thickness>

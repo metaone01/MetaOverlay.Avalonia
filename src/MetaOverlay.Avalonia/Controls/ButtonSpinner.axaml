@@ -4,9 +4,9 @@
 
     <!-- Theme Keys: Default, Solid, Borderless -->
 
-    
+
     <!-- ButtonSpinnerRepeatButton -->
-    
+
     <!-- Default -->
     <ControlTheme x:Key="ButtonSpinnerRepeatButton" TargetType="RepeatButton">
         <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerRepeatButtonDefaultForeground}" />
@@ -47,7 +47,7 @@
                     Value="{DynamicResource ButtonSpinnerRepeatButtonDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
-    
+
     <!-- Solid -->
     <ControlTheme x:Key="SolidButtonSpinnerRepeatButton"
                   BasedOn="{StaticResource ButtonSpinnerRepeatButton}"
@@ -61,30 +61,35 @@
                     Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPointerOverForeground}" />
         </Style>
         <Style Selector="^:pressed /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPressedBackground}" />
-            <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPressedForeground}" />
+            <Setter Property="Background"
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPressedBackground}" />
+            <Setter Property="Foreground"
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultPressedForeground}" />
         </Style>
         <Style Selector="^:disabled /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledBackground}" />
-            <Setter Property="Foreground" Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledForeground}" />
+            <Setter Property="Background"
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledBackground}" />
+            <Setter Property="Foreground"
+                    Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledForeground}" />
             <Setter Property="BorderBrush"
                     Value="{DynamicResource SolidButtonSpinnerRepeatButtonDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
-    
+
     <!-- Borderless -->
     <ControlTheme x:Key="BorderlessButtonSpinnerRepeatButton" TargetType="RepeatButton">
-        <Setter Property="BorderThickness" Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultBorderThickness}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultBorderBrush}" />
+        <Setter Property="BorderThickness"
+                Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultBorderThickness}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
         <Style Selector="^:disabled /template/ ContentPresenter">
             <Setter Property="BorderBrush"
                     Value="{DynamicResource BorderlessButtonSpinnerRepeatButtonDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
-    
-    
+
+
     <!-- ButtonSpinner -->
-    
+
     <!-- Default -->
     <ControlTheme x:Key="{x:Type ButtonSpinner}" TargetType="ButtonSpinner">
         <Setter Property="Foreground" Value="{DynamicResource ButtonSpinnerDefaultForeground}" />
@@ -144,7 +149,7 @@
             <Setter Property="BorderBrush" Value="{DynamicResource ButtonSpinnerDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
-    
+
     <!-- Solid -->
     <ControlTheme x:Key="SolidButtonSpinner" BasedOn="{StaticResource {x:Type ButtonSpinner}}"
                   TargetType="ButtonSpinner">
@@ -205,13 +210,13 @@
             <Setter Property="BorderBrush" Value="{DynamicResource SolidButtonSpinnerDefaultDisabledBorderBrush}" />
         </Style>
     </ControlTheme>
-    
+
     <!-- Borderless -->
     <ControlTheme x:Key="BorderlessButtonSpinner" BasedOn="{StaticResource {x:Type ButtonSpinner}}"
                   TargetType="ButtonSpinner">
         <Setter Property="Foreground" Value="{DynamicResource BorderlessButtonSpinnerDefaultForeground}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderlessButtonSpinnerDefaultBorderBrush}" />
-        <Setter Property="BorderThickness" Value="{DynamicResource BorderlessButtonSpinnerDefaultBorderThickness}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <ControlTemplate TargetType="ButtonSpinner">
                 <Grid ColumnDefinitions="Auto,*,Auto">
@@ -230,7 +235,7 @@
                             Grid.Column="2"
                             MinWidth="16"
                             Margin="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultMargin}"
-                            BorderBrush="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultBorderBrush}"
+                            BorderBrush="Transparent"
                             BorderThickness="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultBorderThickness}"
                             CornerRadius="{DynamicResource BorderlessButtonSpinnerButtonGroupDefaultCornerRadius}"
                             IsVisible="{TemplateBinding ShowButtonSpinner}"

@@ -47,10 +47,10 @@
             </ControlTemplate>
         </Setter>
         <Style Selector="^.Large">
-            <Setter Property="Height" Value="{DynamicResource AutoCompleteBoxLargeHeight}" />
+            <Setter Property="Height" Value="{DynamicResource AutoCompleteBoxLargeMinHeight}" />
         </Style>
         <Style Selector="^.Small">
-            <Setter Property="Height" Value="{DynamicResource AutoCompleteBoxSmallHeight}" />
+            <Setter Property="Height" Value="{DynamicResource AutoCompleteBoxSmallMinHeight}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

@@ -29,8 +29,8 @@
     </ControlTheme>
 
     <ControlTheme x:Key="{x:Type CalendarItem}" TargetType="CalendarItem">
-        <Setter Property="MinWidth" Value="{DynamicResource CalendarMinWidth}" />
-        <Setter Property="MinHeight" Value="{DynamicResource CalendarMinHeight}" />
+        <Setter Property="MinWidth" Value="{DynamicResource CalendarDefaultMinWidth}" />
+        <Setter Property="MinHeight" Value="{DynamicResource CalendarDefaultMinHeight}" />
         <Setter Property="DayTitleTemplate">
             <Template>
                 <TextBlock
@@ -67,7 +67,7 @@
                                 <PathIcon
                                     Theme="{DynamicResource InnerPathIcon}"
                                     Classes="Large"
-                                    Data="{DynamicResource CalendarItemPreviousIconDefaultGlyph}"
+                                    Data="{DynamicResource CalendarItemPreviousIconDefaultData}"
                                     Foreground="{DynamicResource CalendarItemIconDefaultForeground}" />
                             </Button>
 
@@ -87,7 +87,7 @@
                                 <PathIcon
                                     Theme="{DynamicResource InnerPathIcon}"
                                     Classes="Large"
-                                    Data="{DynamicResource CalendarItemNextIconDefaultGlyph}"
+                                    Data="{DynamicResource CalendarItemNextIconDefaultData}"
                                     Foreground="{DynamicResource CalendarItemIconDefaultForeground}" />
                             </Button>
                         </Grid>
@@ -152,7 +152,8 @@
         </Setter>
 
         <Style Selector="^:pointerover /template/ ContentControl">
-            <Setter Property="Background" Value="{DynamicResource CalendarItemCalendarButtonDefaultPointeroverBackground}" />
+            <Setter Property="Background"
+                    Value="{DynamicResource CalendarItemCalendarButtonDefaultPointeroverBackground}" />
         </Style>
 
         <Style Selector="^:pressed /template/ ContentControl">
@@ -161,9 +162,12 @@
 
         <Style Selector="^:selected">
             <Style Selector="^ /template/ ContentControl">
-                <Setter Property="Background" Value="{DynamicResource CalendarItemCalendarButtonDefaultSelectedBackground}" />
-                <Setter Property="Foreground" Value="{DynamicResource CalendarItemCalendarButtonDefaultSelectedForeground}" />
-                <Setter Property="FontWeight" Value="{DynamicResource CalendarItemCalendarButtonDefaultSelectedFontWeight}" />
+                <Setter Property="Background"
+                        Value="{DynamicResource CalendarItemCalendarButtonDefaultSelectedBackground}" />
+                <Setter Property="Foreground"
+                        Value="{DynamicResource CalendarItemCalendarButtonDefaultSelectedForeground}" />
+                <Setter Property="FontWeight"
+                        Value="{DynamicResource CalendarItemCalendarButtonDefaultSelectedFontWeight}" />
             </Style>
         </Style>
 
@@ -215,11 +219,13 @@
         </Setter>
 
         <Style Selector="^:pointerover /template/ ContentControl">
-            <Setter Property="Background" Value="{DynamicResource CalendarItemCalendarDayButtonDefaultPointeroverBackground}" />
+            <Setter Property="Background"
+                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultPointeroverBackground}" />
         </Style>
 
         <Style Selector="^:pressed /template/ ContentControl">
-            <Setter Property="Background" Value="{DynamicResource CalendarItemCalendarDayButtonDefaultPressedBackground}" />
+            <Setter Property="Background"
+                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultPressedBackground}" />
         </Style>
 
         <Style Selector="^:today /template/ ContentControl">
@@ -233,15 +239,18 @@
         </Style>
 
         <Style Selector="^:inactive /template/ ContentControl">
-            <Setter Property="Foreground" Value="{DynamicResource CalendarItemCalendarDayButtonDefaultInactiveForeground}" />
+            <Setter Property="Foreground"
+                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultInactiveForeground}" />
         </Style>
 
         <Style Selector="^:blackout /template/ ContentControl">
-            <Setter Property="Foreground" Value="{DynamicResource CalendarItemCalendarDayButtonDefaultBlackoutForeground}" />
+            <Setter Property="Foreground"
+                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultBlackoutForeground}" />
         </Style>
 
         <Style Selector="^:disabled /template/ ContentControl">
-            <Setter Property="Foreground" Value="{DynamicResource CalendarItemCalendarDayButtonDefaultDisabledForeground}" />
+            <Setter Property="Foreground"
+                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultDisabledForeground}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

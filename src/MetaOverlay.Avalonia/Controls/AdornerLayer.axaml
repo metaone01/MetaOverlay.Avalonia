@@ -16,13 +16,13 @@
             </FocusAdornerTemplate>
         </Setter>
     </ControlTheme>
-    <ControlTheme x:Key="SolidAdornerLayer" 
-                  BasedOn="{StaticResource {x:Type AdornerLayer}}" 
+    <ControlTheme x:Key="SolidAdornerLayer"
+                  BasedOn="{StaticResource {x:Type AdornerLayer}}"
                   TargetType="AdornerLayer">
         <Setter Property="DefaultFocusAdorner">
             <FocusAdornerTemplate>
                 <Border Theme="{StaticResource AdornerLayerBorder}"
-                        Classes="Solid"/>
+                        Classes="Solid" />
             </FocusAdornerTemplate>
         </Setter>
     </ControlTheme>

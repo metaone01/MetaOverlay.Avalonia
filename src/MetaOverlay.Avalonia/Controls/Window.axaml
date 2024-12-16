@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:CompileBindings="True">
-    
+
     <!--  Theme Keys:       Default, TitleBar  -->
     <!-- Default -->
     <ControlTheme x:Key="{x:Type Window}" TargetType="Window">
@@ -11,7 +11,7 @@
         <Setter Property="ExtendClientAreaToDecorationsHint" Value="True" />
         <Setter Property="TransparencyLevelHint" Value="Blur" />
         <Setter Property="ShowInTaskbar" Value="False" />
-        <Setter Property="Topmost" Value="True"/>
+        <Setter Property="Topmost" Value="True" />
         <Setter Property="Foreground" Value="{DynamicResource WindowDefaultForeground}" />
         <Setter Property="FontSize" Value="{DynamicResource WindowDefaultFontSize}" />
         <Setter Property="FontFamily" Value="{DynamicResource WindowDefaultFontFamily}" />
@@ -36,7 +36,7 @@
             </ControlTemplate>
         </Setter>
     </ControlTheme>
-    
+
     <!-- TitleBar -->
     <ControlTheme x:Key="TitleBarWindow" BasedOn="{StaticResource {x:Type Window}}" TargetType="Window">
         <Setter Property="Background" Value="{DynamicResource TitleBarWindowDefaultBackground}" />
@@ -44,7 +44,7 @@
         <Setter Property="ExtendClientAreaToDecorationsHint" Value="False" />
         <Setter Property="TransparencyLevelHint" Value="None" />
         <Setter Property="ShowInTaskbar" Value="True" />
-        <Setter Property="Topmost" Value="False"/>
+        <Setter Property="Topmost" Value="False" />
         <Setter Property="Foreground" Value="{DynamicResource TitleBarWindowDefaultForeground}" />
         <Setter Property="FontSize" Value="{DynamicResource TitleBarWindowDefaultFontSize}" />
         <Setter Property="Template">

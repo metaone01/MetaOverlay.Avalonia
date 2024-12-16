@@ -19,7 +19,8 @@
                         BorderThickness="{TemplateBinding BorderThickness}"
                         CornerRadius="{TemplateBinding CornerRadius}">
                     <DockPanel>
-                        <ScrollViewer Theme="{StaticResource SimpleMenuScrollViewer}" DockPanel.Dock="{TemplateBinding TabStripPlacement}" Name="PART_ScrollViewer">
+                        <ScrollViewer Theme="{StaticResource SimpleMenuScrollViewer}"
+                                      DockPanel.Dock="{TemplateBinding TabStripPlacement}" Name="PART_ScrollViewer">
                             <ItemsPresenter Name="PART_ItemsPresenter" ItemsPanel="{TemplateBinding ItemsPanel}"
                                             Margin="0 0 12 12" />
                         </ScrollViewer>

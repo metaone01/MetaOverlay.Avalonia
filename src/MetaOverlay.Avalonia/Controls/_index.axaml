@@ -5,15 +5,18 @@
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/AutoCompleteBox.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/Border.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/Button.axaml" />
-        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/ButtonSpinner.axaml"/>
-        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/Calendar.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/ButtonSpinner.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/Calendar.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/CalendarDatePicker.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/DataValidationErrors.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/ItemsControl.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/Label.axaml" />
-        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/PathIcon.axaml"/>
-        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/ScrollViewer.axaml"/>
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/PathIcon.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/ScrollViewer.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/TabControl.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/TabItem.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/TextBlock.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/TextBox.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Avalonia/Controls/Window.axaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

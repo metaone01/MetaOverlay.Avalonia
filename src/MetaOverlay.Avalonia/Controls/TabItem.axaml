@@ -3,16 +3,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:CompileBindings="True">
 
-    <!-- Theme Keys: Default, Alpha, NoChange -->
+    <!-- Theme Keys: Default, Alpha, UnChanged -->
     <!-- Classes:    Default, Success, Warning, Danger -->
     <!-- Status:     default, pointerover, pressed, selected, disabled -->
 
-    <!-- NoChange -->
-    <ControlTheme x:Key="NoChangeTabItem" TargetType="TabItem">
+    <!-- UnChanged -->
+    <ControlTheme x:Key="UnChangedTabItem" TargetType="TabItem">
         <Setter Property="Foreground" Value="{DynamicResource TabItemDefaultForeground}" />
         <Setter Property="Background" Value="{DynamicResource TabItemDefaultBackground}" />
         <Setter Property="BorderBrush" Value="{DynamicResource TabItemDefaultBorderBrush}" />
         <Setter Property="BorderThickness" Value="{DynamicResource TabItemDefaultBorderThickness}" />
+        <Setter Property="BackgroundSizing" Value="InnerBorderEdge" />
         <Setter Property="Template">
             <ControlTemplate TargetType="TabItem">
                 <Border
@@ -51,9 +52,9 @@
         </Style>
     </ControlTheme>
 
-    <!-- AlphaNoChange -->
-    <ControlTheme x:Key="AlphaNoChangeTabItem"
-                  BasedOn="{StaticResource NoChangeTabItem}"
+    <!-- AlphaUnChanged -->
+    <ControlTheme x:Key="AlphaUnChangedTabItem"
+                  BasedOn="{StaticResource UnChangedTabItem}"
                   TargetType="TabItem">
         <Style Selector="^[TabStripPlacement=Left]">
             <Style Selector="^ /template/ Border">
@@ -143,7 +144,7 @@
 
     <!-- Default -->
     <ControlTheme x:Key="{x:Type TabItem}"
-                  BasedOn="{StaticResource NoChangeTabItem}"
+                  BasedOn="{StaticResource UnChangedTabItem}"
                   TargetType="TabItem">
         <Style Selector="^:pointerover">
             <Setter Property="Background" Value="{DynamicResource TabItemDefaultPointerOverBackground}" />
@@ -207,7 +208,7 @@
 
     <!-- Alpha -->
     <ControlTheme x:Key="AlphaTabItem"
-                  BasedOn="{StaticResource AlphaNoChangeTabItem}"
+                  BasedOn="{StaticResource AlphaUnChangedTabItem}"
                   TargetType="TabItem">
         <Style Selector="^[TabStripPlacement=Left]">
             <Style Selector="^:pointerover">

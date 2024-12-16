@@ -39,7 +39,7 @@
                                 <PathIcon
                                     Width="10"
                                     Height="10"
-                                    Data="{DynamicResource ScrollBarLeftGlyph}" />
+                                    Data="{DynamicResource ScrollBarLeftDefaultData}" />
                             </RepeatButton>
                             <Track
                                 Grid.Column="1"
@@ -84,7 +84,7 @@
                                 <PathIcon
                                     Width="10"
                                     Height="10"
-                                    Data="{DynamicResource ScrollBarRightGlyph}" />
+                                    Data="{DynamicResource ScrollBarRightDefaultData}" />
                             </RepeatButton>
                         </Grid>
                     </Border>
@@ -110,7 +110,7 @@
                                 <PathIcon
                                     Width="10"
                                     Height="10"
-                                    Data="{DynamicResource ScrollBarUpGlyph}" />
+                                    Data="{DynamicResource ScrollBarUpDefaultData}" />
                             </RepeatButton>
                             <Track
                                 Grid.Row="1"
@@ -156,7 +156,7 @@
                                 <PathIcon
                                     Width="10"
                                     Height="10"
-                                    Data="{DynamicResource ScrollBarDownGlyph}" />
+                                    Data="{DynamicResource ScrollBarDownDefaultData}" />
                             </RepeatButton>
                         </Grid>
                     </Border>
@@ -238,7 +238,7 @@
             </ControlTemplate>
         </Setter>
         <Style Selector="^ /template/ ScrollBar">
-            <Setter Property="Opacity" Value="0"></Setter>
+            <Setter Property="Opacity" Value="0" />
         </Style>
         <Style Selector="^:pointerover">
             <Style Selector="^ /template/ ScrollBar#PART_HorizontalScrollBar">
@@ -311,9 +311,10 @@
                                 <Binding Path="Viewport.Width" RelativeSource="{RelativeSource TemplatedParent}" />
                             </MultiBinding>
                         </RepeatButton.IsVisible>
-                        <Path Data="M14 2 14 0 0 10 14 20 14 18 4 10ZM6 10 20 18 20 16 10 10 20 4 20 2ZM20 6 14 10 20 14Z"
-                              HorizontalAlignment="Left"
-                              VerticalAlignment="Top" />
+                        <Path
+                            Data="M14 2 14 0 0 10 14 20 14 18 4 10ZM6 10 20 18 20 16 10 10 20 4 20 2ZM20 6 14 10 20 14Z"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top" />
                     </RepeatButton>
                     <RepeatButton
                         Background="Transparent"
@@ -377,7 +378,7 @@
                         </RepeatButton.IsVisible>
                         <Path
                             Data="M2 6 0 6 10 20 20 6 18 6 10 16ZM10 14 18 0 16 0 10 10 4 0 2 0ZM6 0 10 6 14 0Z"
-                            HorizontalAlignment="Left" 
+                            HorizontalAlignment="Left"
                             VerticalAlignment="Bottom" />
                     </RepeatButton>
                     <ScrollContentPresenter Name="PART_ContentPresenter" Margin="{TemplateBinding Padding}" />

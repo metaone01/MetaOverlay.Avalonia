@@ -5,6 +5,6 @@
     <SolidColorBrush x:Key="ScrollBarThumbDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="ScrollBarThumbDefaultPointeroverForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="ScrollBarDefaultBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="MenuScrollBarButtonDefaultForeground" Color="#0080FF"/>
-    <SolidColorBrush x:Key="MenuScrollBarButtonDefaultPointeroverForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="MenuScrollBarButtonDefaultForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="MenuScrollBarButtonDefaultPointeroverForeground" Color="#FFFFFF" />
 </ResourceDictionary>

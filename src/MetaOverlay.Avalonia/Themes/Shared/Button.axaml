@@ -6,16 +6,17 @@
     <Thickness x:Key="ButtonDefaultBorderThickness">2</Thickness>
     <x:Double x:Key="ButtonDefaultFontSize">14</x:Double>
     <FontWeight x:Key="ButtonDefaultFontWeight">600</FontWeight>
+
     <CornerRadius x:Key="SolidButtonDefaultCornerRadius">5</CornerRadius>
     <Thickness x:Key="SolidButtonDefaultMargin">6 0</Thickness>
     <Thickness x:Key="SolidButtonDefaultPadding">12 6</Thickness>
     <Thickness x:Key="SolidButtonDefaultBorderThickness">2</Thickness>
     <x:Double x:Key="SolidButtonDefaultFontSize">14</x:Double>
     <FontWeight x:Key="SolidButtonDefaultFontWeight">600</FontWeight>
+
     <CornerRadius x:Key="BorderlessButtonDefaultCornerRadius">5</CornerRadius>
     <Thickness x:Key="BorderlessButtonDefaultMargin">6 0</Thickness>
     <Thickness x:Key="BorderlessButtonDefaultPadding">12 6</Thickness>
-    <Thickness x:Key="BorderlessButtonDefaultBorderThickness">0</Thickness>
     <x:Double x:Key="BorderlessButtonDefaultFontSize">14</x:Double>
     <FontWeight x:Key="BorderlessButtonDefaultFontWeight">600</FontWeight>
 </ResourceDictionary>

@@ -1,9 +1,9 @@
 ﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     x:CompileBindings="True">
-    
+
     <!--  Border Theme Key: Default, Overlay  -->
-    
+
     <!-- Default -->
     <ControlTheme x:Key="{x:Type Border}" TargetType="Border">
         <Setter Property="Margin" Value="{DynamicResource BorderDefaultMargin}" />

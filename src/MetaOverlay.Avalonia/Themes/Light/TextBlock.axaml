@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- Default -->
     <SolidColorBrush x:Key="TextBlockDefaultForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="TextBlockDefaultBackground" Color="Transparent"/>
+    <SolidColorBrush x:Key="TextBlockDefaultBackground" Color="Transparent" />
     <SolidColorBrush x:Key="TextBlockSuccessForeground" Color="#80FF80" />
     <SolidColorBrush x:Key="TextBlockWarningForeground" Color="#FFFF80" />
     <SolidColorBrush x:Key="TextBlockDangerForeground" Color="#FF8080" />
@@ -10,7 +10,7 @@
     <SolidColorBrush x:Key="TextBlockMarkForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="TextBlockMarkBackground" Color="#FFFF00" />
     <SolidColorBrush x:Key="TextBlockCodeForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="TextBlockCodeBackground" Color="#40808080" />
+    <SolidColorBrush x:Key="TextBlockCodeBackground" Color="#80A9A9A9" />
     <SolidColorBrush x:Key="TextBlockCodeBorderBrush" Color="#0080FF" />
     <SolidColorBrush x:Key="TextBlockSelectionBackground" Color="#0080FF" />
     <SolidColorBrush x:Key="TextBlockSelectionForeground" Color="#FFFFFF" />
