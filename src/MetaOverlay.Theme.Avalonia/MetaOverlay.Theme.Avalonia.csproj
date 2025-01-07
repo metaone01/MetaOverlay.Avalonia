@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>0.1.1</Version>
+        <Title>MetaOverlay.Theme.Avalonia</Title>
+        <Authors>metaone01</Authors>
+        <Company />
+        <Product />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.2.3" />
+    </ItemGroup>
+</Project>

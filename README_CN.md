@@ -1,4 +1,4 @@
-﻿# MetaOverlay Avalonia
+﻿# MetaOverlay.Theme.Avalonia
 
 [English](./README.md "README")
 

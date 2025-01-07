@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/AdornerLayer.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/AutoCompleteBox.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/Border.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/Button.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/ButtonSpinner.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/Calendar.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/CalendarDatePicker.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/DataValidationErrors.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/ItemsControl.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/Label.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/PathIcon.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/ScrollViewer.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/TabControl.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/TabItem.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/TextBlock.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/TextBox.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Controls/Window.axaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
