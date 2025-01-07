@@ -1,0 +1,108 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:pages="clr-namespace:MetaOverlay.Theme.Avalonia.Demo.Pages"
+             xmlns:vm="clr-namespace:MetaOverlay.Theme.Avalonia.Demo.ViewModels"
+             x:Class="MetaOverlay.Theme.Avalonia.Demo.Views.MainView"
+             x:DataType="vm:MainViewModel">
+    <TabControl TabStripPlacement="Left">
+        <TabItem Header="OverView" Theme="{StaticResource AlphaTabItem}">
+            <pages:Overview />
+        </TabItem>
+        <TabItem Header="Palette" Theme="{StaticResource AlphaTabItem}">
+            <pages:PaletteDemo />
+        </TabItem>
+        <TabItem Header="AutoCompleteBox" Theme="{StaticResource AlphaTabItem}">
+            <pages:AutoCompleteBoxDemo />
+        </TabItem>
+        <TabItem Header="Border" Theme="{StaticResource AlphaTabItem}">
+            <pages:BorderDemo />
+        </TabItem>
+        <TabItem Header="Button" Theme="{StaticResource AlphaTabItem}">
+            <pages:ButtonDemo />
+        </TabItem>
+        <TabItem Header="ButtonSpinner" Theme="{StaticResource AlphaTabItem}">
+            <pages:ButtonSpinnerDemo />
+        </TabItem>
+        <TabItem Header="Calendar" Theme="{StaticResource AlphaTabItem}">
+            <pages:CalendarDemo />
+        </TabItem>
+        <TabItem Header="CalendarDatePicker" Theme="{StaticResource AlphaTabItem}">
+            <pages:CalendarDatePicker />
+        </TabItem>
+        <TabItem Header="Carousel" Theme="{StaticResource AlphaTabItem}">
+            <pages:CarouselDemo />
+        </TabItem>
+        <TabItem Header="CheckBox" Theme="{StaticResource AlphaTabItem}">
+            <pages:CheckBoxDemo />
+        </TabItem>
+        <TabItem Header="ColorPicker" Theme="{StaticResource AlphaTabItem}">
+            <pages:ColorPickerDemo />
+        </TabItem>
+        <TabItem Header="ComboBox" Theme="{StaticResource AlphaTabItem}">
+            <pages:ComboBoxDemo />
+        </TabItem>
+        <TabItem Header="DataValidationErrors" Theme="{StaticResource AlphaTabItem}">
+            <pages:DataValidationErrorsDemo />
+        </TabItem>
+        <TabItem Header="DataGrid" Theme="{StaticResource AlphaTabItem}">
+            <pages:DataGridDemo />
+        </TabItem>
+        <TabItem Header="DatePicker" Theme="{StaticResource AlphaTabItem}">
+            <pages:DatePickerDemo />
+        </TabItem>
+        <TabItem Header="Expander" Theme="{StaticResource AlphaTabItem}">
+            <pages:ExpanderDemo />
+        </TabItem>
+        <TabItem Header="Flyout" Theme="{StaticResource AlphaTabItem}">
+            <pages:FlyoutDemo />
+        </TabItem>
+        <TabItem Header="GridSplitter" Theme="{StaticResource AlphaTabItem}">
+            <pages:GridSplitterDemo />
+        </TabItem>
+        <TabItem Header="HeaderedContentControl" Theme="{StaticResource AlphaTabItem}">
+            <pages:HeaderedContentControlDemo />
+        </TabItem>
+        <TabItem Header="Label" Theme="{StaticResource AlphaTabItem}">
+            <pages:LabelDemo />
+        </TabItem>
+        <TabItem Header="ListBox" Theme="{StaticResource AlphaTabItem}">
+            <pages:ListBoxDemo />
+        </TabItem>
+        <TabItem Header="ManagedFileChooser" Theme="{StaticResource AlphaTabItem}">
+            <pages:ManagedFileChooserDemo />
+        </TabItem>
+        <TabItem Header="Menu" Theme="{StaticResource AlphaTabItem}">
+            <pages:MenuDemo />
+        </TabItem>
+        <TabItem Header="Notification" Theme="{StaticResource AlphaTabItem}">
+            <pages:NotificationDemo />
+        </TabItem>
+        <TabItem Header="NumericUpDown" Theme="{StaticResource AlphaTabItem}">
+            <pages:NumericUpDownDemo />
+        </TabItem>
+        <TabItem Header="ProgressBar" Theme="{StaticResource AlphaTabItem}">
+            <pages:ProgressBarDemo />
+        </TabItem>
+        <TabItem Header="RadioButton" Theme="{StaticResource AlphaTabItem}">
+            <pages:RadioButtonDemo />
+        </TabItem>
+        <TabItem Header="RefreshContainer" Theme="{StaticResource AlphaTabItem}">
+            <pages:RefreshContainerDemo />
+        </TabItem>
+        <TabItem Header="ScrollViewer" Theme="{StaticResource AlphaTabItem}">
+            <pages:ScrollViewerDemo />
+        </TabItem>
+        <TabItem Header="SelectableTextBlock" Theme="{StaticResource AlphaTabItem}">
+            <pages:SelectableTextBlockDemo />
+        </TabItem>
+        <TabItem Header="Slider" Theme="{StaticResource AlphaTabItem}">
+            <pages:SliderDemo />
+        </TabItem>
+        <TabItem Header="SplitView" Theme="{StaticResource AlphaTabItem}">
+            <pages:SplitViewDemo />
+        </TabItem>
+        <TabItem Header="TabControl" Theme="{StaticResource AlphaTabItem}">
+            <pages:TabControlDemo />
+        </TabItem>
+    </TabControl>
+</UserControl>

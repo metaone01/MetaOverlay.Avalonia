@@ -1,0 +1,15 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:demo="clr-namespace:MetaOverlay.Theme.Avalonia.Demo"
+             x:Class="MetaOverlay.Theme.Avalonia.Demo.App"
+             RequestedThemeVariant="Default">
+    <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <demo:ViewLocator />
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <StyleInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Index.axaml" />
+    </Application.Styles>
+</Application>

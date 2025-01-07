@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="MetaOverlay.Theme.Avalonia.Demo.Pages.LabelDemo">
+    <WrapPanel>
+        <ListBox>
+            <Label Content="Default" />
+            <Label Content="Success" />
+            <Label Content="Warning" />
+            <Label Content="Danger" />
+        </ListBox>
+        <ListBox>
+            <Label Theme="{StaticResource SolidLabel}" Content="Solid" />
+            <Label Theme="{StaticResource SolidLabel}" Content="Success" />
+            <Label Theme="{StaticResource SolidLabel}" Content="Warning" />
+            <Label Theme="{StaticResource SolidLabel}" Content="Danger" />
+        </ListBox>
+        <ListBox>
+            <Label Theme="{StaticResource AlphaLabel}" Content="Alpha" />
+            <Label Theme="{StaticResource AlphaLabel}" Content="Success" />
+            <Label Theme="{StaticResource AlphaLabel}" Content="Warning" />
+            <Label Theme="{StaticResource AlphaLabel}" Content="Danger" />
+        </ListBox>
+        <ListBox>
+            <Label Theme="{StaticResource AlphaSolidLabel}" Content="AlphaSolid" />
+            <Label Theme="{StaticResource AlphaSolidLabel}" Content="Success" />
+            <Label Theme="{StaticResource AlphaSolidLabel}" Content="Warning" />
+            <Label Theme="{StaticResource AlphaSolidLabel}" Content="Danger" />
+        </ListBox>
+    </WrapPanel>
+</UserControl>

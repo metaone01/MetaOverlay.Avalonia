@@ -1,0 +1,20 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="LightBaseForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="LightBaseBackground" Color="#000080FF" />
+    <SolidColorBrush x:Key="LightBaseBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="LightBaseSolidForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="LightBaseSolidBackground" Color="#0080FF" />
+    <SolidColorBrush x:Key="LightBaseSuccessForeground" Color="#80FF80" />
+    <SolidColorBrush x:Key="LightBaseWarningForeground" Color="#FFFF80" />
+    <SolidColorBrush x:Key="LightBaseDangerForeground" Color="#FF8080" />
+    <SolidColorBrush x:Key="LightBaseSolidSuccessForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="LightBaseSolidWarningForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="LightBaseSolidDangerForeground" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="LightBaseSolidSuccessBackground" Color="#80FF80" />
+    <SolidColorBrush x:Key="LightBaseSolidWarningBackground" Color="#FFFF80" />
+    <SolidColorBrush x:Key="LightBaseSolidDangerBackground" Color="#FF8080" />
+    <SolidColorBrush x:Key="LightBaseAlphaSolidSuccessBackground" Color="#8080FF80" />
+    <SolidColorBrush x:Key="LightBaseAlphaSolidWarningBackground" Color="#80FFFF80" />
+    <SolidColorBrush x:Key="LightBaseAlphaSolidDangerBackground" Color="#80FF8080" />
+</ResourceDictionary>

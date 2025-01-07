@@ -1,0 +1,46 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="MetaOverlay.Theme.Avalonia.Demo.Pages.ButtonDemo">
+    <Grid ColumnDefinitions="Auto,*" RowDefinitions="*,*,*,*">
+        <Label Grid.Row="0" Grid.Column="0"
+               Theme="{StaticResource AlphaLabel}"
+               Classes="Left"
+               Content="Unchanged Button" />
+        <WrapPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+            <Button Margin="15" Theme="{StaticResource UnChangedButton}" Content="UnChanged" />
+            <Button Margin="15" Theme="{StaticResource UnChangedButton}" Classes="Success" Content="Success" />
+            <Button Margin="15" Theme="{StaticResource UnChangedButton}" Classes="Warning" Content="Warning" />
+            <Button Margin="15" Theme="{StaticResource UnChangedButton}" Classes="Danger" Content="Danger" />
+        </WrapPanel>
+        <Label Grid.Row="1" Grid.Column="0"
+               Theme="{StaticResource AlphaLabel}"
+               Classes="Left"
+               Content="Default Button" />
+        <WrapPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <Button Margin="15" Content="Default" />
+            <Button Margin="15" Classes="Success" Content="Success" />
+            <Button Margin="15" Classes="Warning" Content="Warning" />
+            <Button Margin="15" Classes="Danger" Content="Danger" />
+        </WrapPanel>
+        <Label Grid.Row="2" Grid.Column="0"
+               Theme="{StaticResource AlphaLabel}"
+               Classes="Left"
+               Content="Solid Button" />
+        <WrapPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+            <Button Margin="15" Theme="{StaticResource SolidButton}" Content="Solid" />
+            <Button Margin="15" Theme="{StaticResource SolidButton}" Classes="Success" Content="Success" />
+            <Button Margin="15" Theme="{StaticResource SolidButton}" Classes="Warning" Content="Warning" />
+            <Button Margin="15" Theme="{StaticResource SolidButton}" Classes="Danger" Content="Danger" />
+        </WrapPanel>
+        <Label Grid.Row="3" Grid.Column="0"
+               Theme="{StaticResource AlphaLabel}"
+               Classes="Left"
+               Content="Borderless Button" />
+        <WrapPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+            <Button Margin="15" Theme="{StaticResource BorderlessButton}" Content="Alpha" />
+            <Button Margin="15" Theme="{StaticResource BorderlessButton}" Classes="Success" Content="Success" />
+            <Button Margin="15" Theme="{StaticResource BorderlessButton}" Classes="Warning" Content="Warning" />
+            <Button Margin="15" Theme="{StaticResource BorderlessButton}" Classes="Danger" Content="Danger" />
+        </WrapPanel>
+    </Grid>
+</UserControl>
