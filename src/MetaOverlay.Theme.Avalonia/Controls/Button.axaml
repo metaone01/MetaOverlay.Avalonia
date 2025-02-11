@@ -235,7 +235,7 @@
     </ControlTheme>
 
     <ControlTheme x:Key="InnerIconButton" TargetType="Button">
-        <Setter Property="Foreground" Value="#80A9A9A9" />
+        <Setter Property="Foreground" Value="{DynamicResource InnerIconButtonDefaultForeground}" />
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Width" Value="16" />
@@ -256,10 +256,10 @@
             </ControlTemplate>
         </Setter>
         <Style Selector="^:pointerover">
-            <Setter Property="Foreground" Value="{DynamicResource ButtonInputInnerPointerOverForeground}" />
+            <Setter Property="Foreground" Value="{DynamicResource InnerIconButtonPointerOverForeground}" />
         </Style>
         <Style Selector="^:pressed">
-            <Setter Property="Foreground" Value="{DynamicResource ButtonInputInnerPressedForeground}" />
+            <Setter Property="Foreground" Value="{DynamicResource InnerIconButtonPressedForeground}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

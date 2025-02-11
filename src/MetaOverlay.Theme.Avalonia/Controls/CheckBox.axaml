@@ -2,26 +2,7 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:CompileBindings="True">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceInclude Source="../Themes/Light/CheckBox.axaml" />
-        <ResourceInclude Source="../Themes/Shared/CheckBox.axaml" />
-    </ResourceDictionary.MergedDictionaries>
-    <Design.PreviewWith>
-        <ThemeVariantScope RequestedThemeVariant="Light">
-            <StackPanel Background="Black">
-                <CheckBox>Hello</CheckBox>
-                <CheckBox IsChecked="True">Hello</CheckBox>
-                <CheckBox Theme="{DynamicResource CardCheckBox}">Hello</CheckBox>
-                <CheckBox Theme="{DynamicResource PureCardCheckBox}">Hello</CheckBox>
-                <CheckBox IsEnabled="False">Hello</CheckBox>
-                <CheckBox IsChecked="True" IsEnabled="False">Hello</CheckBox>
-                <CheckBox IsEnabled="False" Theme="{DynamicResource CardCheckBox}">Hello</CheckBox>
-                <CheckBox IsChecked="True" IsEnabled="False" Theme="{DynamicResource CardCheckBox}">Hello</CheckBox>
-                <CheckBox IsEnabled="False" Theme="{DynamicResource PureCardCheckBox}">Hello</CheckBox>
-                <CheckBox IsChecked="True" IsEnabled="False" Theme="{DynamicResource PureCardCheckBox}">Hello</CheckBox>
-            </StackPanel>
-        </ThemeVariantScope>
-    </Design.PreviewWith>
+
     <ControlTheme x:Key="{x:Type CheckBox}" TargetType="CheckBox">
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Top" />
@@ -415,7 +396,7 @@
             <Style Selector="^ /template/ Border#NormalRectangle">
                 <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxPressedBorderBrush}" />
             </Style>
-            <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxPressedForeground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxPressedForeground}" />
         </Style>
 
         <!--  Unchecked Disabled state  -->
@@ -430,7 +411,7 @@
         </Style>
 
         <Style Selector="^:checked">
-            <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedForeground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedForeground}" />
             <Style Selector="^ /template/ Border#RootBorder">
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedBorderBrush}" />
                 <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedBackground}" />
@@ -447,7 +428,7 @@
 
             <!--  Checked Pointerover State  -->
             <Style Selector="^:pointerover">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}" />
                 <Style Selector="^ /template/ Border#NormalRectangle">
                     <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxCheckedPointerOverBorderBrush}" />
                 </Style>
@@ -458,7 +439,7 @@
 
             <!--  Checked Pressed State  -->
             <Style Selector="^:pressed">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}" />
                 <Style Selector="^ /template/ Border#NormalRectangle">
                     <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxCheckedPressedBorderBrush}" />
                 </Style>
@@ -471,10 +452,10 @@
             <Style Selector="^:disabled">
                 <Style Selector="^ /template/ Border#RootBorder">
                     <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedDisabledBorderBrush}" />
-                    <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedDisabledBackground}"/>
+                    <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedDisabledBackground}" />
                 </Style>
                 <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
-                    <Setter Property="Foreground" Value="{DynamicResource CheckBoxDisabledForeground}" />
+                    <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedDisabledForeground}" />
                 </Style>
                 <Style Selector="^ /template/ Border#NormalRectangle">
                     <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxCheckedDisabledBorderBrush}" />
@@ -503,7 +484,7 @@
 
             <!--  Checked Pointerover State  -->
             <Style Selector="^:pointerover">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}" />
                 <Style Selector="^ /template/ Border#NormalRectangle">
                     <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxCheckedPointerOverBorderBrush}" />
                     <Setter Property="Background" Value="{DynamicResource CheckBoxCheckedPointerOverBackground}" />
@@ -515,7 +496,7 @@
 
             <!--  Checked Pressed State  -->
             <Style Selector="^:pressed">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}" />
                 <Style Selector="^ /template/ Border#NormalRectangle">
                     <Setter Property="BorderBrush" Value="{DynamicResource CheckBoxCheckedPressedBorderBrush}" />
                     <Setter Property="Background" Value="{DynamicResource CheckBoxCheckedPressedBackground}" />
@@ -578,7 +559,7 @@
         <!--  Unchecked Pointerover State  -->
         <Style Selector="^:pointerover">
             <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxPointerOverForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxPointerOverForeground}" />
                 <!-- <Setter Property="Background" Value="{DynamicResource CardCheckBoxPointeroverBackground}" /> -->
             </Style>
         </Style>
@@ -586,7 +567,7 @@
         <!--  Unchecked Pressed State  -->
         <Style Selector="^:pressed">
             <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxPressedForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxPressedForeground}" />
                 <!-- <Setter Property="Background" Value="{DynamicResource CardCheckBoxPressedBackground}" /> -->
             </Style>
         </Style>
@@ -600,43 +581,50 @@
 
         <Style Selector="^:checked">
             <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedForeground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedBorderBrush}" />
                 <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedBackground}" />
             </Style>
             <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedPointerOverBorderBrush}" />
             </Style>
             <Style Selector="^:pressed /template/ ContentPresenter#PART_ContentPresenter">
-                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}"/>
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedPressedBorderBrush}" />
             </Style>
             <!--  Checked Disabled State  -->
             <Style Selector="^:disabled">
                 <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
                     <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedDisabledBorderBrush}" />
-                    <Setter Property="Foreground" Value="{DynamicResource CheckBoxDisabledForeground}" />
-                    <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedDisabledBackground}"/>
+                    <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedDisabledForeground}" />
+                    <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedDisabledBackground}" />
                 </Style>
             </Style>
         </Style>
 
         <Style Selector="^:indeterminate">
             <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedForeground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedBorderBrush}" />
+                <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedBackground}" />
             </Style>
             <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPointerOverForeground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedPointerOverBorderBrush}" />
             </Style>
             <Style Selector="^:pressed /template/ ContentPresenter#PART_ContentPresenter">
+                <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedPressedForeground}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedPressedBorderBrush}" />
             </Style>
             <Style Selector="^:disabled">
                 <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
                     <Setter Property="BorderBrush" Value="{DynamicResource CardCheckBoxCheckedDisabledBorderBrush}" />
+                    <Setter Property="Foreground" Value="{DynamicResource CardCheckBoxCheckedDisabledForeground}" />
+                    <Setter Property="Background" Value="{DynamicResource CardCheckBoxCheckedDisabledBackground}" />
                 </Style>
             </Style>
         </Style>
     </ControlTheme>
+
 </ResourceDictionary>

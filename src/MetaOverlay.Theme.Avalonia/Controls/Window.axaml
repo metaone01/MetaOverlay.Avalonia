@@ -17,22 +17,23 @@
         <Setter Property="FontFamily" Value="{DynamicResource WindowDefaultFontFamily}" />
         <Setter Property="Template">
             <ControlTemplate TargetType="Window">
-                <Border Name="PART_Background"
-                        Theme="{StaticResource OverlayBorder}"
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Margin="{TemplateBinding Padding}">
-                    <Panel>
-                        <ContentPresenter Name="PART_ContentPresenter"
-                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
-                                          Content="{TemplateBinding Content}"
-                                          ContentTemplate="{TemplateBinding ContentTemplate}" />
-                    </Panel>
-                </Border>
+                <Panel>
+                    <Border Name="PART_TransparencyFallback" IsHitTestVisible="False" />
+                    <Border Name="PART_Background"
+                            Background="{TemplateBinding Background}"
+                            IsHitTestVisible="False" />
+                    <Panel Margin="{TemplateBinding WindowDecorationMargin}"
+                           Background="Transparent" />
+                    <VisualLayerManager>
+                        <ContentPresenter
+                            Theme="{StaticResource OverlayBorder}"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                            Content="{TemplateBinding Content}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}" />
+                    </VisualLayerManager>
+                </Panel>
             </ControlTemplate>
         </Setter>
     </ControlTheme>
@@ -49,26 +50,24 @@
         <Setter Property="FontSize" Value="{DynamicResource TitleBarWindowDefaultFontSize}" />
         <Setter Property="Template">
             <ControlTemplate TargetType="Window">
-                <Border Name="PART_Background"
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Margin="{TemplateBinding Padding}">
-                    <Panel>
-                        <VisualLayerManager>
-                            <VisualLayerManager.ChromeOverlayLayer>
-                                <TitleBar />
-                            </VisualLayerManager.ChromeOverlayLayer>
-                        </VisualLayerManager>
+                <Panel>
+                    <Border Name="PART_TransparencyFallback" IsHitTestVisible="False" />
+                    <Border Name="PART_Background"
+                            Background="{TemplateBinding Background}"
+                            IsHitTestVisible="False" />
+                    <Panel Margin="{TemplateBinding WindowDecorationMargin}"
+                           Background="Transparent" />
+                    <VisualLayerManager>
+                        <VisualLayerManager.ChromeOverlayLayer>
+                            <TitleBar />
+                        </VisualLayerManager.ChromeOverlayLayer>
                         <ContentPresenter Name="PART_ContentPresenter"
                                           HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                                           VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
                                           Content="{TemplateBinding Content}"
                                           ContentTemplate="{TemplateBinding ContentTemplate}" />
-                    </Panel>
-                </Border>
+                    </VisualLayerManager>
+                </Panel>
             </ControlTemplate>
         </Setter>
     </ControlTheme>

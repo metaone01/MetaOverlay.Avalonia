@@ -141,7 +141,7 @@
                                 Name="PART_ClearButton"
                                 Grid.Column="2"
                                 Command="{Binding $parent[TextBox].Clear}"
-                                Content="{DynamicResource IconButtonClearDefaultData}"
+                                Content="{DynamicResource IconButtonClearData}"
                                 IsVisible="False"
                                 Theme="{StaticResource InnerIconButton}" />
                             <ToggleButton

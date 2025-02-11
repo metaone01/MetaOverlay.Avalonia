@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- Default -->
     <SolidColorBrush x:Key="LabelDefaultBorderBrush" Color="#0080FF" />
-    <SolidColorBrush x:Key="LabelDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="LabelDefaultDisabledBorderBrush" Color="#80696969" />
     <SolidColorBrush x:Key="LabelSuccessBorderBrush" Color="#80FF80" />
     <SolidColorBrush x:Key="LabelWarningBorderBrush" Color="#FFFF80" />
     <SolidColorBrush x:Key="LabelDangerBorderBrush" Color="#FF8080" />
@@ -72,24 +72,24 @@
         <GradientStop Color="#FF8080" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaLabelLeftDefaultDisabledBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaLabelTopDefaultDisabledBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaLabelRightDefaultDisabledBorderBrush" StartPoint="100% 50%" EndPoint="0% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaLabelBottomDefaultDisabledBorderBrush" StartPoint="50% 100%" EndPoint="50% 0%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <!-- Solid -->
     <SolidColorBrush x:Key="SolidLabelDefaultBorderBrush" Color="#0080FF" />
-    <SolidColorBrush x:Key="SolidLabelDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="SolidLabelDefaultDisabledBorderBrush" Color="#80696969" />
     <SolidColorBrush x:Key="SolidLabelSuccessBorderBrush" Color="#80FF80" />
     <SolidColorBrush x:Key="SolidLabelWarningBorderBrush" Color="#FFFF80" />
     <SolidColorBrush x:Key="SolidLabelDangerBorderBrush" Color="#FF8080" />
@@ -110,19 +110,19 @@
         <GradientStop Color="Transparent" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="SolidLabelLeftDisabledBackground" StartPoint="0% 50%" EndPoint="100% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="SolidLabelTopDisabledBackground" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="SolidLabelRightDisabledBackground" StartPoint="0% 50%" EndPoint="100% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="0" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="SolidLabelBottomDisabledBackground" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="0" />
     </LinearGradientBrush>
     <!-- AlphaSolid -->
@@ -191,19 +191,19 @@
         <GradientStop Color="#00FF8080" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaSolidLabelLeftDefaultDisabledBackground" StartPoint="0% 50%" EndPoint="100% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaSolidLabelTopDefaultDisabledBackground" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaSolidLabelRightDefaultDisabledBackground" StartPoint="100% 50%" EndPoint="0% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="AlphaSolidLabelBottomDefaultDisabledBackground" StartPoint="50% 100%" EndPoint="50% 0%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80A9A9A9" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
 </ResourceDictionary>

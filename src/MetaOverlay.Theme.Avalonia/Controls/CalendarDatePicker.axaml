@@ -57,7 +57,7 @@
                                 Grid.Column="1"
                                 Theme="{DynamicResource InnerIconButton}"
                                 Margin="8 0"
-                                Content="{DynamicResource IconButtonClearDefaultData}"
+                                Content="{DynamicResource IconButtonClearData}"
                                 Command="{Binding $parent[CalendarDatePicker].Clear}"
                                 Focusable="False"
                                 IsVisible="False" />

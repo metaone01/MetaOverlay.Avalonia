@@ -11,6 +11,7 @@
             <Button Margin="15" Theme="{StaticResource UnChangedButton}" Classes="Success" Content="Success" />
             <Button Margin="15" Theme="{StaticResource UnChangedButton}" Classes="Warning" Content="Warning" />
             <Button Margin="15" Theme="{StaticResource UnChangedButton}" Classes="Danger" Content="Danger" />
+            <Button Margin="15" Theme="{StaticResource UnChangedButton}" IsEnabled="False" Content="Disabled" />
         </WrapPanel>
         <Label Grid.Row="1" Grid.Column="0"
                Theme="{StaticResource AlphaLabel}"
@@ -21,6 +22,7 @@
             <Button Margin="15" Classes="Success" Content="Success" />
             <Button Margin="15" Classes="Warning" Content="Warning" />
             <Button Margin="15" Classes="Danger" Content="Danger" />
+            <Button Margin="15" IsEnabled="False" Content="Disabled" />
         </WrapPanel>
         <Label Grid.Row="2" Grid.Column="0"
                Theme="{StaticResource AlphaLabel}"
@@ -31,6 +33,7 @@
             <Button Margin="15" Theme="{StaticResource SolidButton}" Classes="Success" Content="Success" />
             <Button Margin="15" Theme="{StaticResource SolidButton}" Classes="Warning" Content="Warning" />
             <Button Margin="15" Theme="{StaticResource SolidButton}" Classes="Danger" Content="Danger" />
+            <Button Margin="15" Theme="{StaticResource SolidButton}" IsEnabled="False" Content="Disabled" />
         </WrapPanel>
         <Label Grid.Row="3" Grid.Column="0"
                Theme="{StaticResource AlphaLabel}"
@@ -41,6 +44,7 @@
             <Button Margin="15" Theme="{StaticResource BorderlessButton}" Classes="Success" Content="Success" />
             <Button Margin="15" Theme="{StaticResource BorderlessButton}" Classes="Warning" Content="Warning" />
             <Button Margin="15" Theme="{StaticResource BorderlessButton}" Classes="Danger" Content="Danger" />
+            <Button Margin="15" Theme="{StaticResource BorderlessButton}" IsEnabled="False" Content="Disabled" />
         </WrapPanel>
     </Grid>
 </UserControl>

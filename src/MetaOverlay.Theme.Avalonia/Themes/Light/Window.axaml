@@ -3,7 +3,7 @@
     <SolidColorBrush x:Key="WindowDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="WindowDefaultBackground" Color="#CCFFFFFF" />
     <SolidColorBrush x:Key="TitleBarWindowDefaultForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="TitleBarWindowDefaultBackground" Color="DimGray" />
+    <SolidColorBrush x:Key="TitleBarWindowDefaultBackground" Color="White" />
 
 
 </ResourceDictionary>

@@ -6,11 +6,11 @@
     <SolidColorBrush x:Key="TextBlockSuccessForeground" Color="#80FF80" />
     <SolidColorBrush x:Key="TextBlockWarningForeground" Color="#FFFF80" />
     <SolidColorBrush x:Key="TextBlockDangerForeground" Color="#FF8080" />
-    <SolidColorBrush x:Key="TextBlockDefaultDisabledForeground" Color="#A9A9A9" />
+    <SolidColorBrush x:Key="TextBlockDefaultDisabledForeground" Color="#696969" />
     <SolidColorBrush x:Key="TextBlockMarkForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="TextBlockMarkBackground" Color="#FFFF00" />
-    <SolidColorBrush x:Key="TextBlockCodeForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="TextBlockCodeBackground" Color="#80A9A9A9" />
+    <SolidColorBrush x:Key="TextBlockCodeForeground" Color="Orange" />
+    <SolidColorBrush x:Key="TextBlockCodeBackground" Color="#80000000" />
     <SolidColorBrush x:Key="TextBlockCodeBorderBrush" Color="#0080FF" />
     <SolidColorBrush x:Key="TextBlockSelectionBackground" Color="#0080FF" />
     <SolidColorBrush x:Key="TextBlockSelectionForeground" Color="#FFFFFF" />
@@ -23,11 +23,11 @@
     <SolidColorBrush x:Key="SolidTextBlockWarningBackground" Color="#80FFFF80" />
     <SolidColorBrush x:Key="SolidTextBlockDangerForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="SolidTextBlockDangerBackground" Color="#80FF8080" />
-    <SolidColorBrush x:Key="SolidTextBlockCodeForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="SolidTextBlockCodeBackground" Color="#B0808080" />
+    <SolidColorBrush x:Key="SolidTextBlockCodeForeground" Color="Orange" />
+    <SolidColorBrush x:Key="SolidTextBlockCodeBackground" Color="#80000000" />
     <SolidColorBrush x:Key="SolidTextBlockCodeBorderBrush" Color="#0080FF" />
-    <SolidColorBrush x:Key="SolidTextBlockSelectionBackground" Color="#80FFFFFF" />
-    <SolidColorBrush x:Key="SolidTextBlockSelectionForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="SolidTextBlockDefaultDisabledForeground" Color="#80A9A9A9" />
-    <SolidColorBrush x:Key="SolidTextBlockDefaultDisabledBackground" Color="#80696969" />
+    <SolidColorBrush x:Key="SolidTextBlockSelectionBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="SolidTextBlockSelectionForeground" Color="White" />
+    <SolidColorBrush x:Key="SolidTextBlockDefaultDisabledForeground" Color="#696969" />
+    <SolidColorBrush x:Key="SolidTextBlockDefaultDisabledBackground" Color="#80A9A9A9" />
 </ResourceDictionary>

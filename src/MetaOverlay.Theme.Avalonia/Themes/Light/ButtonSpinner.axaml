@@ -10,8 +10,8 @@
     <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultPressedForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultPressedBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultDisabledBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultDisabledForeground" Color="DarkGray" />
-    <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultDisabledBorderBrush" Color="DimGray" />
+    <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultDisabledForeground" Color="#696969" />
+    <SolidColorBrush x:Key="ButtonSpinnerRepeatButtonDefaultDisabledBorderBrush" Color="#80696969" />
     <!-- Solid -->
     <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultBackground" Color="#800080FF" />
@@ -19,9 +19,9 @@
     <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultPointerOverBackground" Color="#8000FFFF" />
     <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultPressedForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultPressedBackground" Color="#8000FFFF" />
-    <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultDisabledBackground" Color="#80696969" />
-    <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultDisabledForeground" Color="#A9A9A9" />
-    <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultDisabledBackground" Color="#80A9A9A9" />
+    <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultDisabledForeground" Color="#696969" />
+    <SolidColorBrush x:Key="SolidButtonSpinnerRepeatButtonDefaultDisabledBorderBrush" Color="#80A9A9A9" />
     <!-- Borderless -->
     <SolidColorBrush x:Key="BorderlessButtonSpinnerRepeatButtonDefaultBorderBrush" Color="Transparent" />
     <SolidColorBrush x:Key="BorderlessButtonSpinnerRepeatButtonDefaultDisabledBorderBrush" Color="Transparent" />
@@ -33,9 +33,9 @@
     <SolidColorBrush x:Key="ButtonSpinnerButtonGroupDefaultBorderBrush" Color="#0080FF" />
     <SolidColorBrush x:Key="ButtonSpinnerIncreaseButtonDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="ButtonSpinnerDecreaseButtonDefaultForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="ButtonSpinnerDefaultDisabledForeground" Color="#A9A9A9" />
+    <SolidColorBrush x:Key="ButtonSpinnerDefaultDisabledForeground" Color="#696969" />
     <SolidColorBrush x:Key="ButtonSpinnerDefaultDisabledBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="ButtonSpinnerDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="ButtonSpinnerDefaultDisabledBorderBrush" Color="#80696969" />
     <!-- Solid -->
     <SolidColorBrush x:Key="SolidButtonSpinnerDefaultForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="SolidButtonSpinnerDefaultBorderBrush" Color="#0080FF" />
@@ -43,14 +43,14 @@
     <SolidColorBrush x:Key="SolidButtonSpinnerButtonGroupDefaultBorderBrush" Color="#0080FF" />
     <SolidColorBrush x:Key="SolidButtonSpinnerIncreaseButtonDefaultForeground" Color="#FFFFFF" />
     <SolidColorBrush x:Key="SolidButtonSpinnerDecreaseButtonDefaultForeground" Color="#FFFFFF" />
-    <SolidColorBrush x:Key="SolidButtonSpinnerDefaultDisabledForeground" Color="#A9A9A9" />
-    <SolidColorBrush x:Key="SolidButtonSpinnerDefaultDisabledBackground" Color="#80696969" />
-    <SolidColorBrush x:Key="SolidButtonSpinnerDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="SolidButtonSpinnerDefaultDisabledForeground" Color="#696969" />
+    <SolidColorBrush x:Key="SolidButtonSpinnerDefaultDisabledBackground" Color="#80A9A9A9" />
+    <SolidColorBrush x:Key="SolidButtonSpinnerDefaultDisabledBorderBrush" Color="#80696969" />
     <!-- Borderless -->
     <SolidColorBrush x:Key="BorderlessButtonSpinnerDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="BorderlessButtonSpinnerDefaultBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="BorderlessButtonSpinnerIncreaseButtonDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="BorderlessButtonSpinnerDecreaseButtonDefaultForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="BorderlessButtonSpinnerDefaultDisabledForeground" Color="#A9A9A9" />
+    <SolidColorBrush x:Key="BorderlessButtonSpinnerDefaultDisabledForeground" Color="#696969" />
     <SolidColorBrush x:Key="BorderlessButtonSpinnerDefaultDisabledBackground" Color="Transparent" />
 </ResourceDictionary>

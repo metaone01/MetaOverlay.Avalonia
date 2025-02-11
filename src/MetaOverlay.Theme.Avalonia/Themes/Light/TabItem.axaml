@@ -33,19 +33,19 @@
         <GradientStop Color="#000080FF" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="TabItemLeftDisabledBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="TabItemTopDisabledBorderBrush" StartPoint="50% 0%" EndPoint="50% 100%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="TabItemRightDisabledBorderBrush" StartPoint="100% 50%" EndPoint="0% 50%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="TabItemBottomDisabledBorderBrush" StartPoint="50% 100%" EndPoint="50% 0%">
-        <GradientStop Color="#696969" Offset="0" />
+        <GradientStop Color="#80696969" Offset="0" />
         <GradientStop Color="#00696969" Offset="1" />
     </LinearGradientBrush>
     <LinearGradientBrush x:Key="TabItemLeftSuccessBorderBrush" StartPoint="0% 50%" EndPoint="100% 50%">
@@ -158,6 +158,6 @@
     <SolidColorBrush x:Key="TabItemSuccessPointerOverBackground" Color="#8080FF80" />
     <SolidColorBrush x:Key="TabItemWarningPointerOverBackground" Color="#80FFFF80" />
     <SolidColorBrush x:Key="TabItemDangerPointerOverBackground" Color="#80FF8080" />
-    <SolidColorBrush x:Key="TabItemDefaultDisabledForeground" Color="#A9A9A9" />
-    <SolidColorBrush x:Key="TabItemDefaultDisabledBorderBrush" Color="#696969" />
+    <SolidColorBrush x:Key="TabItemDefaultDisabledForeground" Color="#696969" />
+    <SolidColorBrush x:Key="TabItemDefaultDisabledBorderBrush" Color="#80696969" />
 </ResourceDictionary>
