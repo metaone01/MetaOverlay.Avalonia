@@ -177,7 +177,7 @@
             </Setter>
         </Style>
         <Style Selector="^ /template/ Thumb#thumb:pointerover">
-            <Setter Property="Foreground" Value="{DynamicResource ScrollBarThumbDefaultPointeroverForeground}" />
+            <Setter Property="Foreground" Value="{DynamicResource ScrollBarThumbDefaultPointerOverForeground}" />
         </Style>
         <Style Selector="^:horizontal /template/ Thumb#thumb">
             <Setter Property="MinWidth" Value="{DynamicResource ScrollBarDefaultThickness}" />
@@ -191,7 +191,7 @@
             <Setter Property="Foreground" Value="{DynamicResource ScrollBarButtonDefaultForeground}" />
         </Style>
         <Style Selector="^ /template/ RepeatButton:pointerover > PathIcon">
-            <Setter Property="Foreground" Value="{DynamicResource ScrollBarButtonDefaultPointeroverForeground}" />
+            <Setter Property="Foreground" Value="{DynamicResource ScrollBarButtonDefaultPointerOverForeground}" />
         </Style>
         <Style Selector="^ /template/ RepeatButton:pressed > PathIcon">
             <Setter Property="RenderTransform" Value="scale(0.98)" />
@@ -390,7 +390,7 @@
         </Style>
 
         <Style Selector="^ /template/ RepeatButton:pointerover > Path">
-            <Setter Property="Fill" Value="{DynamicResource MenuScrollBarButtonDefaultPointeroverForeground}" />
+            <Setter Property="Fill" Value="{DynamicResource MenuScrollBarButtonDefaultPointerOverForeground}" />
         </Style>
     </ControlTheme>
 </ResourceDictionary>

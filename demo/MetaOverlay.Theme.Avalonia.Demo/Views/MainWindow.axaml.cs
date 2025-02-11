@@ -8,6 +8,6 @@ public partial class MainWindow : Window {
     public MainWindow() {
         InitializeComponent();
         WindowState = WindowState.Maximized;
-        PointerExited += (_, _) => { Close(); };
+        // PointerExited += (_, _) => { Close(); };
     }
 }

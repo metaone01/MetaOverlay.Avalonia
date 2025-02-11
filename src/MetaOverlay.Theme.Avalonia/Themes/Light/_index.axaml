@@ -8,6 +8,8 @@
         <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/ButtonSpinner.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/Calendar.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/CalendarDatePicker.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/CaptionButtons.axaml" />
+        <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/CheckBox.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/DataValidationErrors.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/Label.axaml" />
         <ResourceInclude Source="avares://MetaOverlay.Theme.Avalonia/Themes/Light/PathIcon.axaml" />

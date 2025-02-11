@@ -4,6 +4,8 @@
         <TargetFramework>net9.0-ios</TargetFramework>
         <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
         <Nullable>enable</Nullable>
+        <Configurations>Debug;Release;Build Desktop</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <ItemGroup>

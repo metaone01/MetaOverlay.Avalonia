@@ -8,7 +8,7 @@ Example:
 
 ButtonDefaultBackground
 
-SolidButtonDefaultPointeroverBorderThickness
+SolidButtonDefaultPointerOverBorderThickness
 
 TabItemLeftDefaultPointerOverForeground
 
@@ -22,8 +22,9 @@ TabItemLeftDefaultPointerOverForeground
 >
 > > Examples: 
 > >
-> > TabStripPlacementProperty of Control ***[TabItem](./MetaOverlay.Avalonia/Controls/TabItem.axaml)***
-> > >TabItemLeftCustomClassPointerOverBackground
+> > TabStripPlacementProperty of Control **[TabItem](./Controls/TabItem.axaml)**:
+> > 
+> > `TabItemLeftCustomClassPointerOverBackground`
 
 - Classes comes before PseudoClasses
 - If multiple Classes are applied, order by alphabet order.

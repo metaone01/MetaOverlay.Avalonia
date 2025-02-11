@@ -1,6 +1,7 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
+using Avalonia.Platform;
 using MetaOverlay.Theme.Avalonia.Demo.ViewModels;
 
 namespace MetaOverlay.Theme.Avalonia.Demo;
@@ -8,7 +9,6 @@ namespace MetaOverlay.Theme.Avalonia.Demo;
 public class ViewLocator : IDataTemplate {
     public Control? Build(object? data) {
         if (data is null) return null;
-
         var name = data.GetType().FullName!.Replace("ViewModel", "View", StringComparison.Ordinal);
         var type = Type.GetType(name);
 

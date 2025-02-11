@@ -8,7 +8,7 @@
     <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultBackground" Color="Transparent" />
     <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultBorderBrush" Color="#800080FF" />
-    <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultPointeroverBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultPointerOverBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultPressedBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultSelectedBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="CalendarItemCalendarButtonDefaultSelectedForeground" Color="#FFFFFF" />
@@ -20,7 +20,7 @@
     <SolidColorBrush x:Key="CalendarItemCalendarDayButtonDefaultBackground" Color="Transparent" />
     <SolidColorBrush x:Key="CalendarItemCalendarDayButtonDefaultBorderBrush" Color="#0080FF" />
 
-    <SolidColorBrush x:Key="CalendarItemCalendarDayButtonDefaultPointeroverBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="CalendarItemCalendarDayButtonDefaultPointerOverBackground" Color="#800080FF" />
     <SolidColorBrush x:Key="CalendarItemCalendarDayButtonDefaultPressedBackground" Color="#800080FF" />
 
     <SolidColorBrush x:Key="CalendarItemCalendarDayButtonSelectedBackground" Color="#800080FF" />

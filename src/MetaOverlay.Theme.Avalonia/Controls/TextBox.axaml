@@ -11,17 +11,17 @@
     <MenuFlyout x:Key="TextBoxDefaultContextFlyout" Placement="Bottom">
         <MenuItem
             Command="{Binding $parent[TextBox].Cut}"
-            Header="{DynamicResource STRING_MENU_CUT}"
+            Header="{DynamicResource MENU_CUT}"
             InputGesture="{x:Static TextBox.CutGesture}"
             IsEnabled="{Binding $parent[TextBox].CanCut}" />
         <MenuItem
             Command="{Binding $parent[TextBox].Copy}"
-            Header="{DynamicResource STRING_MENU_COPY}"
+            Header="{DynamicResource MENU_COPY}"
             InputGesture="{x:Static TextBox.CopyGesture}"
             IsEnabled="{Binding $parent[TextBox].CanCopy}" />
         <MenuItem
             Command="{Binding $parent[TextBox].Paste}"
-            Header="{DynamicResource STRING_MENU_PASTE}"
+            Header="{DynamicResource MENU_PASTE}"
             InputGesture="{x:Static TextBox.PasteGesture}"
             IsEnabled="{Binding $parent[TextBox].CanPaste}" />
     </MenuFlyout>
@@ -51,7 +51,7 @@
             </ControlTemplate>
         </Setter>
         <Style Selector="^:pointerover">
-            <Setter Property="Foreground" Value="{DynamicResource ButtonInputInnerPointeroverForeground}" />
+            <Setter Property="Foreground" Value="{DynamicResource ButtonInputInnerPointerOverForeground}" />
         </Style>
         <Style Selector="^:pressed">
             <Setter Property="Foreground" Value="{DynamicResource ButtonInputInnerPressedForeground}" />
@@ -220,8 +220,8 @@
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Style Selector="^:pointerover /template/ Border#PART_ContentPresenterBorder">
-            <Setter Property="Background" Value="{DynamicResource TextBoxDefaultPointeroverBackground}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource TextBoxDefaultPointeroverBorderBrush}" />
+            <Setter Property="Background" Value="{DynamicResource TextBoxDefaultPointerOverBackground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource TextBoxDefaultPointerOverBorderBrush}" />
         </Style>
         <Style Selector="^:pressed /template/ Border#PART_ContentPresenterBorder">
             <Setter Property="Background" Value="{DynamicResource TextBoxDefaultPressedBackground}" />
@@ -420,8 +420,8 @@
                   BasedOn="{StaticResource NonErrorTextBox}"
                   TargetType="TextBox">
         <Style Selector="^:pointerover /template/ Border#PART_ContentPresenterBorder">
-            <Setter Property="Background" Value="{DynamicResource TextBoxPointeroverBackground}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource TextBoxPointeroverBorderBrush}" />
+            <Setter Property="Background" Value="{DynamicResource TextBoxPointerOverBackground}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource TextBoxPointerOverBorderBrush}" />
         </Style>
         <Style Selector="^:pressed /template/ Border#PART_ContentPresenterBorder">
             <Setter Property="Background" Value="{DynamicResource TextBoxPressedBackground}" />

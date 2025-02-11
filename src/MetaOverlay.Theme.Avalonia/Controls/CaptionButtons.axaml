@@ -1,0 +1,105 @@
+<ResourceDictionary
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:CompileBindings="True">
+    <Design.PreviewWith>
+        <CaptionButtons />
+    </Design.PreviewWith>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="../Themes/Light/CaptionButtons.axaml"/>
+        <ResourceInclude Source="../Themes/Shared/CaptionButtons.axaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <ControlTheme x:Key="CaptionButton" TargetType="Button">
+        <Setter Property="Foreground" Value="{DynamicResource CaptionButtonForeground}" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="Margin" Value="0, 4" />
+        <Setter Property="Padding" Value="4" />
+        <Setter Property="Height" Value="28" />
+        <Setter Property="Width" Value="28" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Template">
+            <ControlTemplate TargetType="Button">
+                <ContentPresenter
+                    Name="PART_ContentPresenter"
+                    Padding="{TemplateBinding Padding}"
+                    Background="Transparent"
+                    Content="{TemplateBinding Content}"
+                    CornerRadius="{TemplateBinding CornerRadius}" />
+            </ControlTemplate>
+        </Setter>
+
+        <Style Selector="^:pointerover">
+            <Setter Property="Foreground" Value="{DynamicResource CaptionButtonPointerOverForeground}" />
+        </Style>
+
+        <Style Selector="^:pressed">
+            <Setter Property="Foreground" Value="{DynamicResource CaptionButtonPressedForeground}" />
+        </Style>
+    </ControlTheme>
+
+    <ControlTheme x:Key="{x:Type CaptionButtons}" TargetType="CaptionButtons">
+        <Setter Property="Foreground" Value="{DynamicResource CaptionButtonForeground}" />
+        <Setter Property="Margin" Value="0 0 4 0" />
+        <Setter Property="Template">
+            <ControlTemplate TargetType="CaptionButtons">
+                <StackPanel
+                    VerticalAlignment="Stretch"
+                    Orientation="Horizontal"
+                    Spacing="2"
+                    TextElement.FontSize="10">
+                    <Button Name="PART_FullScreenButton" Theme="{StaticResource CaptionButton}">
+                        <PathIcon
+                            Name="PART_FullScreenButtonIcon"
+                            Theme="{DynamicResource InnerPathIcon}"
+                            Data="{DynamicResource WindowExpandGlyph}"
+                            Foreground="{Binding $parent[Button].Foreground}" />
+                    </Button>
+                    <Button Name="PART_MinimizeButton" Theme="{StaticResource CaptionButton}">
+                        <PathIcon
+                            Theme="{DynamicResource InnerPathIcon}"
+                            Data="{DynamicResource WindowMinimizeGlyph}"
+                            Foreground="{Binding $parent[Button].Foreground}" />
+                    </Button>
+                    <Button Name="PART_RestoreButton" Theme="{StaticResource CaptionButton}">
+                        <PathIcon
+                            Name="PART_RestoreButtonIcon"
+                            Theme="{DynamicResource InnerPathIcon}"
+                            Data="{DynamicResource WindowMaximizeGlyph}"
+                            Foreground="{Binding $parent[Button].Foreground}" />
+                    </Button>
+                    <Button
+                        Name="PART_CloseButton"
+                        Background="{DynamicResource CaptionButtonPointerOverBackground}"
+                        BorderBrush="{DynamicResource CaptionButtonPressedBackground}"
+                        Theme="{StaticResource CaptionButton}">
+                        <Button.Styles>
+                            <Style Selector="Button:pointerover">
+                                <Setter Property="Foreground" Value="{DynamicResource CaptionButtonClosePointerOverForeground}" />
+                            </Style>
+                            <Style Selector="Button:pressed">
+                                <Setter Property="Foreground" Value="{DynamicResource CaptionButtonClosePressedForeground}" />
+                            </Style>
+                        </Button.Styles>
+                        <PathIcon
+                            Theme="{DynamicResource InnerPathIcon}"
+                            Data="{DynamicResource WindowCloseIconGlyph}"
+                            Foreground="{Binding $parent[Button].Foreground}" />
+                    </Button>
+                </StackPanel>
+            </ControlTemplate>
+        </Setter>
+        <Style Selector="^:maximized /template/ PathIcon#PART_RestoreButtonIcon">
+            <Setter Property="Data" Value="{DynamicResource WindowRestoreGlyph}" />
+        </Style>
+        <Style Selector="^:fullscreen /template/ PathIcon#PART_FullScreenButtonIcon">
+            <Setter Property="Data" Value="{DynamicResource WindowCollapseGlyph}" />
+        </Style>
+        <Style Selector="^:fullscreen /template/ Button#PART_RestoreButton">
+            <Setter Property="IsVisible" Value="False" />
+        </Style>
+        <Style Selector="^:fullscreen /template/ Button#PART_MinimizeButton">
+            <Setter Property="IsVisible" Value="False" />
+        </Style>
+    </ControlTheme>
+</ResourceDictionary>

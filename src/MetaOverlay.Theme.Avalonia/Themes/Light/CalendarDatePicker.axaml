@@ -1,10 +1,10 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <SolidColorBrush x:Key="CalendarDatePickerIconDefaultForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="CalendarDatePickerDefaultForeground" Color="#0080FF" />
-    <SolidColorBrush x:Key="CalendarDatePickerIconDefaultPointeroverForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="CalendarDatePickerIconDefaultPointerOverForeground" Color="#0080FF" />
     <SolidColorBrush x:Key="CalendarDatePickerDefaultBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="CalendarDatePickerDefaultPointeroverBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="CalendarDatePickerDefaultPointeroverBorderBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="CalendarDatePickerDefaultPointerOverBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="CalendarDatePickerDefaultPointerOverBorderBrush" Color="Transparent" />
     <SolidColorBrush x:Key="CalendarDatePickerDefaultBorderBrush" Color="Transparent" />
     <SolidColorBrush x:Key="CalendarDatePickerDefaultFocusBorderBrush" Color="#0080FF" />
     <SolidColorBrush x:Key="CalendarDatePickerDefaultDisabledBackground" Color="Transparent" />
@@ -12,6 +12,6 @@
 
     <SolidColorBrush x:Key="BorderlessCalendarDatePickerDefaultBackground" Color="Transparent" />
     <SolidColorBrush x:Key="BorderlessCalendarDatePickerDefaultBorderBrush" Color="#0080FF" />
-    <SolidColorBrush x:Key="BorderlessCalendarDatePickerDefaultPointeroverBackground" Color="Transparent" />
-    <SolidColorBrush x:Key="BorderlessCalendarDatePickerDefaultPointeroverBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="BorderlessCalendarDatePickerDefaultPointerOverBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="BorderlessCalendarDatePickerDefaultPointerOverBorderBrush" Color="#0080FF" />
 </ResourceDictionary>

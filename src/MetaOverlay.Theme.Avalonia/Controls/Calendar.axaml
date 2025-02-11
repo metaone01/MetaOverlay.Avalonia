@@ -153,7 +153,7 @@
 
         <Style Selector="^:pointerover /template/ ContentControl">
             <Setter Property="Background"
-                    Value="{DynamicResource CalendarItemCalendarButtonDefaultPointeroverBackground}" />
+                    Value="{DynamicResource CalendarItemCalendarButtonDefaultPointerOverBackground}" />
         </Style>
 
         <Style Selector="^:pressed /template/ ContentControl">
@@ -220,7 +220,7 @@
 
         <Style Selector="^:pointerover /template/ ContentControl">
             <Setter Property="Background"
-                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultPointeroverBackground}" />
+                    Value="{DynamicResource CalendarItemCalendarDayButtonDefaultPointerOverBackground}" />
         </Style>
 
         <Style Selector="^:pressed /template/ ContentControl">

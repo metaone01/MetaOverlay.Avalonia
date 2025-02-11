@@ -86,6 +86,6 @@
     <SolidColorBrush x:Key="BorderlessButtonDefaultDisabledForeground" Color="DarkGray" />
     <SolidColorBrush x:Key="BorderlessButtonDefaultDisabledBackground" Color="Transparent" />
     <!-- InnerIconButton -->
-    <SolidColorBrush x:Key="ButtonInputInnerPointeroverForeground" Color="#A9A9A9" />
+    <SolidColorBrush x:Key="ButtonInputInnerPointerOverForeground" Color="#A9A9A9" />
     <SolidColorBrush x:Key="ButtonInputInnerPressedForeground" Color="Transparent" />
 </ResourceDictionary>

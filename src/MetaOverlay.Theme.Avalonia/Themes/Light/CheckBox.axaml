@@ -1,0 +1,40 @@
+<ResourceDictionary
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="CheckBoxForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="CheckBoxDisabledForeground" Color="#A9A9A9" />
+
+    <SolidColorBrush x:Key="CheckBoxGlyphFill" Color="White" />
+    <SolidColorBrush x:Key="CheckBoxGlyphDisabledFill" Color="#A9A9A9" />
+
+    <SolidColorBrush x:Key="CheckBoxDefaultBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="CheckBoxPointerOverBackground" Color="#80000000" />
+    <SolidColorBrush x:Key="CheckBoxPointerOverBorderBrush" Color="#0040FF" />
+    <SolidColorBrush x:Key="CheckBoxPressedBackground" Color="#0040FF" />
+    <SolidColorBrush x:Key="CheckBoxPressedBorderBrush" Color="#0040FF" />
+
+    <SolidColorBrush x:Key="CheckBoxCheckedDefaultBackground" Color="#0080FF" />
+    <SolidColorBrush x:Key="CheckBoxCheckedDefaultBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="CheckBoxCheckedPointerOverBackground" Color="#0040FF" />
+    <SolidColorBrush x:Key="CheckBoxCheckedPointerOverBorderBrush" Color="#0040FF" />
+    <SolidColorBrush x:Key="CheckBoxCheckedPressedBackground" Color="#0040FF" />
+    <SolidColorBrush x:Key="CheckBoxCheckedPressedBorderBrush" Color="#0040FF" />
+    <SolidColorBrush x:Key="CheckBoxCheckedDisabledBackground" Color="#80696969" />
+    <SolidColorBrush x:Key="CheckBoxCheckedDisabledBorderBrush" Color="#80A9A9A9" />
+    <SolidColorBrush x:Key="CheckBoxDefaultDisabledBackground" Color="Transparent" />
+    <SolidColorBrush x:Key="CheckBoxDefaultDisabledBorderBrush" Color="#80A9A9A9" />
+    
+    <SolidColorBrush x:Key="CardCheckBoxPointerOverForeground" Color="#0040FF" />
+    <SolidColorBrush x:Key="CardCheckBoxPointerOverBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="CardCheckBoxPressedForeground" Color="White" />
+    <SolidColorBrush x:Key="CardCheckBoxPressedBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedForeground" Color="White" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedBackground" Color="#800080FF" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedBorderBrush" Color="#0080FF" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedDisabledBorderBrush" Color="#80A9A9A9" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedDisabledBackground" Color="#80696969" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedPointerOverForeground" Color="White" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedPointerOverBorderBrush" Color="#0040FF" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedPressedForeground" Color="#0080FF" />
+    <SolidColorBrush x:Key="CardCheckBoxCheckedPressedBorderBrush" Color="#0040FF" />
+</ResourceDictionary>

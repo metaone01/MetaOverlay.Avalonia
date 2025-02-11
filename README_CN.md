@@ -6,4 +6,6 @@
 
 ### 本项目暂无NuGet包
 
+### 本项目基于 [Semi.Avalonia](https://github.com/irihitech/Semi.Avalonia). 感谢!
+
 > 为Avalonia 覆盖程序提供的主题，提供半透明、简单线条的视觉效果

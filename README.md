@@ -6,4 +6,6 @@
 
 ### This theme has no NuGet Package yet.
 
+### This theme is based on [Semi.Avalonia](https://github.com/irihitech/Semi.Avalonia). Thanks!
+
 > A theme for avalonia overlay application.Provides a visual effect of translucent, simple lines.

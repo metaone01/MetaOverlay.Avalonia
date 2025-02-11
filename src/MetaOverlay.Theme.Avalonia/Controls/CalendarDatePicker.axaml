@@ -97,14 +97,14 @@
                 <Setter Property="BorderBrush" Value="{DynamicResource BorderlessCalendarDatePickerDefaultBorderBrush}" />
             </Style>
             <Style Selector="^:pointerover /template/ Border#Background">
-                <Setter Property="Background" Value="{DynamicResource CalendarDatePickerBorderedPointeroverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource CalendarDatePickerBorderedPointerOverBackground}" />
                 <Setter Property="BorderBrush"
-                        Value="{DynamicResource CalendarDatePickerBorderedPointeroverBorderBrush}" />
+                        Value="{DynamicResource CalendarDatePickerBorderedPointerOverBorderBrush}" />
             </Style>
             <Style Selector="^:focus-within /template/ Border#Background">
-                <Setter Property="Background" Value="{DynamicResource CalendarDatePickerBorderedPointeroverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource CalendarDatePickerBorderedPointerOverBackground}" />
                 <Setter Property="BorderBrush"
-                        Value="{DynamicResource CalendarDatePickerBorderedPointeroverBorderBrush}" />
+                        Value="{DynamicResource CalendarDatePickerBorderedPointerOverBorderBrush}" />
             </Style>
             <Style Selector="^:disabled">
                 <Style Selector="^ /template/ Border#Background">
@@ -138,9 +138,9 @@
 
         <Style Selector="^:pointerover">
             <Style Selector="^ /template/ Border#Background">
-                <Setter Property="Background" Value="{DynamicResource CalendarDatePickerDefaultPointeroverBackground}" />
+                <Setter Property="Background" Value="{DynamicResource CalendarDatePickerDefaultPointerOverBackground}" />
                 <Setter Property="BorderBrush"
-                        Value="{DynamicResource CalendarDatePickerDefaultPointeroverBorderBrush}" />
+                        Value="{DynamicResource CalendarDatePickerDefaultPointerOverBorderBrush}" />
             </Style>
         </Style>
 
